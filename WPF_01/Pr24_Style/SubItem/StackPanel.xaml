@@ -1,0 +1,33 @@
+﻿<StackPanel x:Class="Pr24_Style.SubItem.StackPanel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--只有一个XAML文件，没有后端代码依旧可以正常运行。此时该XAML文件的Build Action为Page，
+        若改为其它则有可能无法正常编译。-->
+    <StackPanel.Resources>
+        <Style x:Key="normal">
+            <Setter Property="Control.FontSize" Value="24"/>
+            <Setter Property="Control.Foreground" Value="Blue"/>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Control.Margin" Value="24"/>
+            <Setter Property="Control.Padding" Value="20 10 20 10"/>
+            <!--无法用一个字符串表示Property所对应的value值，就需要将其打散，用property element来表示-->
+            <Setter Property="Control.Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1"> <!--起点终点来表示梯度向量的方向-->
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Color="LightBlue" Offset="0"/>
+                            <GradientStop Color="Red" Offset="1"/>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </StackPanel.Resources>
+
+    <!--在此通过 StaticResource 对应的key来引用上面定义的Style-->
+    <Button Style="{StaticResource normal}">The Button_01</Button>
+    <Button Style="{StaticResource normal}">The Button_02</Button>
+    <Button Style="{StaticResource normal}">The Button_03</Button>
+
+</StackPanel>

@@ -1,0 +1,37 @@
+﻿<Grid x:Class="Pr24_Style.SubItem.StylesWithSameKey"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pr24_Style.SubItem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+    
+    <!--若Style有定义x:Key的值，就需要控件显示的指定Style的key来引用对应的Style类型-->
+
+    <!--若明确指定了Style的TargetType，则在后面再创建对应的TargetType控件时，
+    将会自动使用该Style，而不需要显示的指定对应控件的Style来进行引用。
+    且在此也没有定义x:Key，因此也就无法显式的指定对应控件的Style值-->
+    <Grid.Resources>
+        <Style TargetType="Button">  
+            <Setter Property="Control.FontSize" Value="34"/>
+            <Setter Property="Control.Foreground" Value="Blue"/>
+            <Setter Property="Control.Background" Value="Yellow"/>
+        </Style>
+    </Grid.Resources>
+
+    
+    <StackPanel>
+        <!--在此StackPanel内的Style也没有指定 x:Key 的值，而是指定了TargetTy，因此在该StackPanel内，只要
+        创建了对应类型的控件，该控件就将自动套用此局部定义的Style，而覆盖Grid域内的Style-->
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Control.Foreground" Value="Red"/>
+            </Style>
+        </StackPanel.Resources>
+
+        <Button Margin="10" >The button 01</Button>
+        <Button Margin="10">The button 02</Button>
+        
+    </StackPanel>
+</Grid>

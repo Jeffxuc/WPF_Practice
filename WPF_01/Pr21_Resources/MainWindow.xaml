@@ -1,0 +1,33 @@
+﻿<Window x:Class="Pr21_Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr21_Resources"
+        xmlns:sf="clr-namespace:System;assembly=mscorlib" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel.Resources>
+            <sf:Double x:Key="largeFont">
+                20
+            </sf:Double>
+            <sf:Double x:Key="smallFont">
+                15
+            </sf:Double>
+        </StackPanel.Resources>
+
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24">
+            <!-- One way to use the Resource,This is not a good choice -->
+            <Button.FontSize>
+                <StaticResource ResourceKey="largeFont"/>
+            </Button.FontSize>
+            Large font for this Button
+        </Button>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Margin="24" 
+                FontSize="{StaticResource smallFont}">  <!--Another way to use the defined Resource, Recommend this way-->
+            Small font for this button
+        </Button>
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="Pr23_DataBinding.SubItem.CustomElementBindingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr23_DataBinding.SubItem"
+        mc:Ignorable="d"
+        Title="CustomElementBindingWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <ScrollBar Orientation="Horizontal" Margin="24" Maximum="100" Minimum="1"
+                       SmallChange="1" LargeChange="10"
+                       Value="{Binding ElementName=simpElem,Path=Number,Mode=OneWayToSource}" />
+            <local:SimpleElement x:Name="simpElem" HorizontalAlignment="Center"/>
+
+            <ScrollBar Name="scroll" Orientation="Horizontal" Maximum="100" Minimum="1" SmallChange="1"/>
+
+            <local:SimpleElement x:Name="sep" HorizontalAlignment="Center" 
+                                 Number="{Binding ElementName=scroll,Path=Value,Mode=TwoWay}"/>
+
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Pr19_XMAL.SubItem.CompileXamlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr19_XMAL.SubItem"
+        mc:Ignorable="d"
+        Title="Compile Xaml Window" Height="400" Width="800"
+        SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <StackPanel Margin="6">
+        <Button HorizontalAlignment="Center" Margin="24" Background="PaleVioletRed" Click="ButtonOnClicked" FontSize="20">
+            Click the button
+        </Button>
+        <Ellipse Name="Elpse" Width="200" Height="100" Stroke="Black" Margin="24" StrokeThickness="5"/>
+        <ListBox Name="listBox" Width="300" Height="100" Margin="24" SelectionChanged="SelectChange">
+        </ListBox>
+
+
+
+    </StackPanel>
+</Window>

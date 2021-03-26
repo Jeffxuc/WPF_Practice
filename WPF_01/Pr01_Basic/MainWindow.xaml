@@ -1,0 +1,19 @@
+﻿<Window x:Class="Pr01_Basic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr01_Basic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="500">
+
+    <Grid>
+        <Button x:Name="ChangeSliderVal" Height="50" Width="200" Content="ChangeSliderValue" Margin="209,125,86.2,97.8" Click="ResponseClick" >
+
+        </Button>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="62,52,0,0" VerticalAlignment="Top" Width="162" Height="36" Click="testYU"/>
+        <Slider x:Name="sliderForValue" HorizontalAlignment="Left" Margin="45,252,0,0" Height="52" Width="364" Maximum="100" TickPlacement="BottomRight" TickFrequency="10" VerticalAlignment="Top" SmallChange="1"/>
+        <TextBox x:Name="textBox01" HorizontalAlignment="Left" Height="23" Margin="62,202,0,0" TextWrapping="Wrap" Text="{Binding ElementName=sliderForValue,Path=Value}" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.489,0.392" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlock01" HorizontalAlignment="Left" Margin="295,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="10" FontSize="14" TextAlignment="Center" MinHeight="25" Text="00"/>
+    </Grid>
+</Window>

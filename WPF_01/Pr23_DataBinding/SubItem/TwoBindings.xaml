@@ -1,0 +1,21 @@
+﻿<Window x:Class="Pr23_DataBinding.SubItem.TwoBindings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr23_DataBinding.SubItem"
+        mc:Ignorable="d"
+        Title="TwoBindings" Height="450" Width="800">
+    <Grid>
+        <StackPanel DataContext="{Binding ElementName=scroll_1}">
+            
+            <!--The binding source-->
+            <ScrollBar Name="scroll_1" Orientation="Horizontal" Maximum="100" Minimum="0" SmallChange="10" Margin="24"/>
+            
+            <!--The binding targets-->
+            <Label Name="lb01" Content="{Binding Path=Value, Mode=OneWay}" HorizontalAlignment="Center"/>
+            <Button Name="btn01" FontSize="{Binding Path=Value, Mode=OneWay}" HorizontalAlignment="Center" Content="Hello test the Binding"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

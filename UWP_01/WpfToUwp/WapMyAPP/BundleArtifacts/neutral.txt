@@ -1,0 +1,2 @@
+MainPackage=D:\WSpace\WPFProject\UWP_01\WpfToUwp\WapMyAPP\bin\AnyCPU\Debug\WapMyAPP_1.1.2.0_AnyCPU_Debug.appx
+SymbolPackage=D:\WSpace\WPFProject\UWP_01\WpfToUwp\WapMyAPP\AppPackages\WapMyAPP_1.1.2.0_Debug_Test\WapMyAPP_1.1.2.0_AnyCPU_Debug.appxsym

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="PluginB.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PluginB"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Background="Honeydew" Margin="10">
+            <TextBlock Name="tb02" FontSize="40" Text="This is Page B" Foreground="BlueViolet" HorizontalAlignment="Center"/>
+            <Button Name="btn02" Content="TheBtn02" HorizontalAlignment="Center" FontSize="40" Margin="20" Click="btn02_Clicked"/>
+            <Label Name="lb01" Visibility="Collapsed" Content="The btn02 in the pageB have been clicked." HorizontalAlignment="Center"
+                   FontSize="30" Margin="0 60 0 0" Foreground="Red"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

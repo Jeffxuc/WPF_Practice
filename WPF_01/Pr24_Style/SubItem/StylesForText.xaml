@@ -1,0 +1,26 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Pr24_Style.SubItem"
+      Width="500">
+    <Page.Resources>
+        <Style x:Key="normal" TargetType="{x:Type Paragraph}">
+            <Setter Property="TextIndent" Value="0.25in"/>
+        </Style>
+
+        <Style x:Key="chapterHead" TargetType="{x:Type Paragraph}">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="20pt"/>
+        </Style>
+    </Page.Resources>
+
+    <FlowDocumentReader>
+        <FlowDocument>
+            <Paragraph Style="{StaticResource chapterHead}">The Chapter one</Paragraph>
+            <Paragraph Style="{StaticResource chapterHead}">Download the rabit hore</Paragraph>
+            <Paragraph Style="{StaticResource normal}">Download the rabit hore
+            ,just a thanks for you .and you is  a greater person.</Paragraph>
+        </FlowDocument>
+        
+    </FlowDocumentReader>
+    
+</Page>

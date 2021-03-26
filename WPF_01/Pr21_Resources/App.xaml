@@ -1,0 +1,25 @@
+﻿<Application x:Class="Pr21_Resources.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Pr21_Resources.MultiProgramShareResources"
+             StartupUri="MultiProgramShareResources/UseCommonResourceWindow.xaml">
+    <Application.Resources>
+        <LinearGradientBrush x:Key="brushGradient" StartPoint="0,0" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0" Color="Black"/>
+                <GradientStop Offset="0.5" Color="Green"/>
+                <GradientStop Offset="1" Color="Gold"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+
+        <!--将MyResources1.xaml和MyResources2.xaml文件的资源进行合并-->
+        <ResourceDictionary  x:Key="mergeXaml">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="MyResources1.xaml"/>
+                <ResourceDictionary Source="MyResources2.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>

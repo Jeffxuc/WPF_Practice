@@ -1,0 +1,17 @@
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\bin\Debug\Pr04_ButtonsAndOtherControls.exe.config
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\bin\Debug\Pr04_ButtonsAndOtherControls.exe
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\bin\Debug\Pr04_ButtonsAndOtherControls.pdb
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.csprojAssemblyReference.cache
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\MainWindow.g.cs
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\App.g.cs
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls_MarkupCompile.cache
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls_MarkupCompile.lref
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\MainWindow.baml
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.g.resources
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.Properties.Resources.resources
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.csproj.GenerateResource.cache
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.csproj.CoreCompileInputs.cache
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.exe
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\Pr04_ButtonsAndOtherControls.pdb
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\SubItems\UseListView.g.cs
+D:\WSpace\WPFProject\WPF_01\Pr04_ButtonsAndOtherControls\obj\Debug\SubItems\UseListView.baml

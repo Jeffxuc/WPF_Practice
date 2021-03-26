@@ -1,0 +1,15 @@
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\bin\Debug\Pr06_DockAndGrid.exe.config
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\bin\Debug\Pr06_DockAndGrid.exe
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\bin\Debug\Pr06_DockAndGrid.pdb
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.csprojAssemblyReference.cache
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\MainWindow.g.cs
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\App.g.cs
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid_MarkupCompile.cache
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid_MarkupCompile.lref
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\MainWindow.baml
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.g.resources
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.Properties.Resources.resources
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.csproj.GenerateResource.cache
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.csproj.CoreCompileInputs.cache
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.exe
+D:\WSpace\WPFProject\WPF_01\Pr06_DockAndGrid\obj\Debug\Pr06_DockAndGrid.pdb

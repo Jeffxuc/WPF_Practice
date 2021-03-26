@@ -1,0 +1,10 @@
+﻿<Application x:Class="Pr19_XMAL.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Pr19_XMAL"
+             StartupUri="SubItem/UseCenterButtonWindow.xaml"
+             >
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

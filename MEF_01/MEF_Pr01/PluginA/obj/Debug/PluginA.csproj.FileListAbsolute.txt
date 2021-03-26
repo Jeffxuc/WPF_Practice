@@ -1,0 +1,16 @@
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\bin\Debug\PluginA.dll
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\bin\Debug\PluginA.pdb
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\bin\Debug\PluginInterface.dll
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\bin\Debug\PluginInterface.pdb
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.csprojAssemblyReference.cache
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginAPage.g.cs
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA_MarkupCompile.cache
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA_MarkupCompile.lref
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginAPage.baml
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.g.resources
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.Properties.Resources.resources
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.csproj.GenerateResource.cache
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.csproj.CoreCompileInputs.cache
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.csproj.CopyComplete
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.dll
+D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\PluginA.pdb

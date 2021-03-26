@@ -1,0 +1,14 @@
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\bin\Debug\MyPluginA.dll
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\bin\Debug\MyPluginA.pdb
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\bin\Debug\MyPluginInterface.dll
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\bin\Debug\MyPluginInterface.pdb
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.csprojResolveAssemblyReference.cache
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\UserControl1.g.cs
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA_MarkupCompile.cache
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA_MarkupCompile.lref
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\UserControl1.baml
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.g.resources
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.Properties.Resources.resources
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.csproj.GenerateResource.Cache
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.dll
+D:\WSpace\WPFProject\MEF_Pra01\WpfExe\MyPluginA\obj\Debug\MyPluginA.pdb

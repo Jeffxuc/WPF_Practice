@@ -1,0 +1,19 @@
+﻿<Window x:Class="Pr23_DataBinding.DigitalClock.DigitalClockWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr23_DataBinding.DigitalClock"
+        mc:Ignorable="d"
+        Title="DigitalClockWindow" Height="450" Width="800"
+        FontFamily="Bookman Old Style" FontSize="36pt">
+
+    <Window.Resources>
+        <local:ClockTicker1 x:Key="ticker1"/>
+    </Window.Resources>
+
+    <!--窗口中显示自制的计时器-->
+    <Window.Content>
+        <Binding Source="{StaticResource ticker1}" Path="SelfDateTime"/>
+    </Window.Content>
+</Window>

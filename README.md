@@ -1,3 +1,2 @@
-<font face="Times New Roman">
-### WPF_1  directory
-This is a practice of the examples in the book <<Application=Code+MakeUp>>.
+1. WPF_1  directory:
+This is a practice of the examples in the book named: Application=Code+MakeUp

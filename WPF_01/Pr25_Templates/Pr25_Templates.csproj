@@ -57,6 +57,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SubItem\CircledRadioButtons.xaml.cs">
+      <DependentUpon>CircledRadioButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubItem\ResourceTemplate.xaml.cs">
+      <DependentUpon>ResourceTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubItem\SetTemplateInStyle.xaml.cs">
+      <DependentUpon>SetTemplateInStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubItem\ToggleSwitch.xaml.cs">
+      <DependentUpon>ToggleSwitch.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +82,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SubItem\ButtonWithTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\CircledRadioButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\ResourceTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\SetTemplateInStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\ToggleSwitch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

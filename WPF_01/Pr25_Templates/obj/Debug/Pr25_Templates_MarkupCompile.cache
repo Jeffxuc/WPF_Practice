@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WSpace\WPF\WPF_01\Pr25_Templates\obj\Debug\
+D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\
 Pr25_Templates
 none
 false
 DEBUG;TRACE
-D:\WSpace\WPF\WPF_01\Pr25_Templates\App.xaml
-2-1397855865
+D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\App.xaml
+6-1573647638
 
-5-2017746502
+9-917276391
 151984215308
-MainWindow.xaml;SubItem\ButtonWithTemplate.xaml;
+MainWindow.xaml;SubItem\ButtonWithTemplate.xaml;SubItem\CircledRadioButtons.xaml;SubItem\ResourceTemplate.xaml;SubItem\SetTemplateInStyle.xaml;SubItem\ToggleSwitch.xaml;
 
 False
 

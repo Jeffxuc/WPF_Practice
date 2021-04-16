@@ -23,7 +23,8 @@ namespace Pr30_Animation.SubItem
         public ColorRadioButtons()
         {
             InitializeComponent();
-
+            Button btn = new Button();
+            
         }
     }
 }

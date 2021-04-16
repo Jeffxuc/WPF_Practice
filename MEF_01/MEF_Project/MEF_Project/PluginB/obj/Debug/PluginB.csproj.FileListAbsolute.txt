@@ -1,0 +1,16 @@
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\bin\Debug\PluginB.dll
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\bin\Debug\PluginB.pdb
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\bin\Debug\MyInterface.dll
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\bin\Debug\MyInterface.pdb
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.csprojAssemblyReference.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\UserControl1.g.cs
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB_MarkupCompile.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB_MarkupCompile.lref
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\UserControl1.baml
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.g.resources
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.Properties.Resources.resources
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.csproj.GenerateResource.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.csproj.CoreCompileInputs.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.csproj.CopyComplete
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.dll
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\PluginB\obj\Debug\PluginB.pdb

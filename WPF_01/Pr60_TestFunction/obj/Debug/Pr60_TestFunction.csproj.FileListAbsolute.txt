@@ -45,3 +45,7 @@ D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\Pr60_TestFunction.g.re
 D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\Pr60_TestFunction.Properties.Resources.resources
 D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\Pr60_TestFunction.csproj.GenerateResource.cache
 D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\Pr60_TestFunction.csproj.CoreCompileInputs.cache
+D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\F01_UIQuickTips\TipMask.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\F01_UIQuickTips\TipMask.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\F00_Temp\ControlsUsage.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr60_TestFunction\obj\Debug\F00_Temp\ControlsUsage.baml

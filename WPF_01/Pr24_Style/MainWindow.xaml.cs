@@ -25,4 +25,5 @@ namespace Pr24_Style
             InitializeComponent();
         }
     }
+ 
 }

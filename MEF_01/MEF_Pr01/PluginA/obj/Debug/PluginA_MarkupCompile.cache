@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginA\obj\Debug\
+D:\WSpace\WPF_Practice\MEF_01\MEF_Pr01\PluginA\obj\Debug\
 PluginA
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 1-1250488887
 
-41743607563
-151794985566
+8-780536737
+151603476475
 PluginAPage.xaml;
 
-False
+True
 

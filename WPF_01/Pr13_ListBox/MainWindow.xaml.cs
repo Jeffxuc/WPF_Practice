@@ -24,5 +24,12 @@ namespace Pr13_ListBox
         {
             InitializeComponent();
         }
+
+        private void Lst_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //因为选中的是ListBox，所以sender只能先转换成ListBox控件，
+            ListBoxItem Selectitem = (sender as ListBox).SelectedItem as ListBoxItem;
+            tb.Text = Selectitem.Content.ToString() + " have been selected.";
+        }
     }
 }

@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!--Create simple ListBox in XAML-->
+        <StackPanel Margin="20">
+            <TextBox Name="tb" Width="200" Height="30" HorizontalContentAlignment="Center">No Item been selected.</TextBox>
+            <ListBox Name="lst" Width="100" Height="80" SelectionChanged="Lst_SelectionChanged" SelectionMode="Single">
+                <ListBoxItem>Item 1</ListBoxItem>
+                <ListBoxItem>Item 2</ListBoxItem>
+                <ListBoxItem>Item 3</ListBoxItem>
+                <ListBoxItem>Item 4</ListBoxItem>
+                <ListBoxItem>Item 5</ListBoxItem>
+                <ListBoxItem>Item 6</ListBoxItem>
+                <ListBoxItem>Item 7</ListBoxItem>
+                <ListBoxItem>Item 8</ListBoxItem>
+                <ListBoxItem>Item 9</ListBoxItem>
+                <ListBoxItem>Item 10</ListBoxItem>
+            </ListBox>
+        </StackPanel>
         
     </Grid>
 </Window>

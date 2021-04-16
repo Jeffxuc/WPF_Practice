@@ -60,6 +60,10 @@
     <Compile Include="SubItem\CircledRadioButtons.xaml.cs">
       <DependentUpon>CircledRadioButtons.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SubItem\DumpControlTemplate\ControlMenuItem.cs" />
+    <Compile Include="SubItem\DumpControlTemplate\DumpControlTemplate.xaml.cs">
+      <DependentUpon>DumpControlTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItem\ResourceTemplate.xaml.cs">
       <DependentUpon>ResourceTemplate.xaml</DependentUpon>
     </Compile>
@@ -86,6 +90,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SubItem\CircledRadioButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\DumpControlTemplate\DumpControlTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

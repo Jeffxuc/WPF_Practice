@@ -1,0 +1,22 @@
+﻿<Window x:Class="MainProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainProgram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--左侧为ListView栏-->
+        <ListView x:Name="ItemsList" Grid.Column="0" Background="Bisque"/>
+        <!--中间为分割条-->
+        <GridSplitter Grid.Column="1" Width="6" VerticalAlignment="Stretch" HorizontalAlignment="Center" ShowsPreview="False"/>
+        <!--右侧显示加载的各个Plugin的内容-->
+        <Frame x:Name="frameContent" Grid.Column="2"/>
+    </Grid>
+</Window>

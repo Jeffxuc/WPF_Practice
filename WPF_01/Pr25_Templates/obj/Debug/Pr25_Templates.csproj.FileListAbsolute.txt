@@ -40,3 +40,6 @@ D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\CircledRadioButto
 D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\CircledRadioButtons.baml
 D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\ToggleSwitch.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\ToggleSwitch.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\DumpControlTemplate\DumpControlTemplate.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr25_Templates\obj\Debug\SubItem\DumpControlTemplate\DumpControlTemplate.baml

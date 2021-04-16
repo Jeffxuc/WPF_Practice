@@ -1,0 +1,6 @@
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\bin\Debug\MyInterface.dll
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\bin\Debug\MyInterface.pdb
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\obj\Debug\MyInterface.csprojAssemblyReference.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\obj\Debug\MyInterface.csproj.CoreCompileInputs.cache
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\obj\Debug\MyInterface.dll
+D:\WSpace\WPF_Practice\MEF_01\MEF_Project\MEF_Project\MyInterface\obj\Debug\MyInterface.pdb

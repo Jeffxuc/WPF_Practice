@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\WSpace\WPF_Practice\WPF_01\Pr04_ButtonsAndOtherControls\App.xaml
-21008164714
+52072630672
 
-12-1619715763
+1112744616
 131569487696
-MainWindow.xaml;SubItems\UseListView.xaml;
+MainWindow.xaml;SubItems\Border_Usage.xaml;SubItems\ComboBox.xaml;SubItems\ScrollViewer.xaml;SubItems\UseListView.xaml;
 
-True
+False
 

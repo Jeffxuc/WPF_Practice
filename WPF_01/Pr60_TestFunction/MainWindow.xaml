@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pr60_TestFunction"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600" x:Name="wind">
+        Title="MainWindow" Height="450" Width="800" x:Name="wind" Loaded="wind_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -13,16 +13,32 @@
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="tb" FontFamily="Times New Roman" FontSize="20" VerticalAlignment="Center" Margin="20">
-            This is the Main Window
-        </TextBlock>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
 
+            <TextBlock Name="tb" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Times New Roman" FontSize="20" VerticalAlignment="Center" Margin="20">
+            This is the Main Window
+            </TextBlock>
+            <Image Name="helpImg" Grid.Column="2" Width="30"  Source="D://WSpace//HelpBtn.png" MouseDown="HelpImg_MouseDown"></Image>
+        </Grid>
+        
         <Canvas Grid.Row="1"  Margin="5">
             <Button Name="btn01" Width="80" Height="20" Content="Btn01"  Canvas.Left="10" Canvas.Top="20"/>
-            <Button Name="btn02" Width="80" Height="20" Content="Btn02"  Canvas.Right="20" Canvas.Top="20"/>
+            <Button Name="btn02" Width="80" Height="20" Content="Btn02"  Canvas.Right="300" Canvas.Top="20"/>
             <Button Name="btn03" Width="80" Height="20" Content="Btn03"  Canvas.Left="50" Canvas.Bottom="70"/>
-            <Button Name="btn04" Width="80" Height="20" Content="Btn03"  Canvas.Right="50" Canvas.Bottom="50"/>
+            <Button Name="btn04" Width="80" Height="20" Content="Btn04"  Canvas.Right="500" Canvas.Bottom="50"/>
         </Canvas>
+
+        <StackPanel Grid.Row="2" Margin="16" Name="sp1">
+            <StackPanel Margin="8">
+                <TextBlock Name="myTextBlock" Margin="4" FontSize="20" Text="Hello, Just a Test" />
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Window>

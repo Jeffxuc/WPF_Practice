@@ -55,7 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="F00_Temp\ControlsUsage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="F01_UIQuickTips\QuickTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="F01_UIQuickTips\TipMask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,8 +75,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="F00_Temp\ControlsUsage.xaml.cs">
+      <DependentUpon>ControlsUsage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="F01_UIQuickTips\QuickTip.xaml.cs">
       <DependentUpon>QuickTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="F01_UIQuickTips\QuickTipData.cs" />
+    <Compile Include="F01_UIQuickTips\TipMask.xaml.cs">
+      <DependentUpon>TipMask.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

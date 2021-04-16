@@ -55,8 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SubItems\Border_Usage.xaml.cs">
+      <DependentUpon>Border_Usage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubItems\ComboBox.xaml.cs">
+      <DependentUpon>ComboBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItems\EditRichText.cs" />
     <Compile Include="SubItems\EditText.cs" />
+    <Compile Include="SubItems\ScrollViewer.xaml.cs">
+      <DependentUpon>ScrollViewer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItems\UseListView.xaml.cs">
       <DependentUpon>UseListView.xaml</DependentUpon>
     </Compile>
@@ -72,6 +81,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SubItems\Border_Usage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItems\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItems\ScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SubItems\UseListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

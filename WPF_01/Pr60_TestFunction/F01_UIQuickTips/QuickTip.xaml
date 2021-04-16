@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pr60_TestFunction.F01_UIQuickTips"
         mc:Ignorable="d"
-        Height="450" Width="800" Name="maskForTips">
+        Height="130" Width="300" Name="tips">
 
     <UserControl.Resources>
         <Style x:Key="btnStyle" TargetType="Button">
             <Setter Property="Background" Value="LightGray"/>
             <Setter Property="Foreground" Value="BlueViolet"/>
-            <Setter Property="FontSize" Value="50"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontFamily" Value="Times New Roman"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Name="border" CornerRadius="10" Background="{TemplateBinding Background}" Padding="20 2 20 2">
+                        <Border Name="border" CornerRadius="10" Background="{TemplateBinding Background}" Padding="10 2 10 2" Margin="5">
                             <ContentPresenter Content="{TemplateBinding Content}"/>
                         </Border>
                     </ControlTemplate>
@@ -29,11 +29,22 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Image  Grid.RowSpan="2" Source="D:\\WSpace\\TipsBackground.png" Stretch="Fill"/>
-        <TextBlock Name="tb" Grid.Row="0" Text="The discrible" FontSize="50" Margin="10 200 80 0" />
-        <Button Name="btn" Grid.Row="1" Style="{StaticResource btnStyle}" Content="next"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.RowSpan="4" Grid.ColumnSpan="3" Source="D:\\WSpace\\TipsBackground.png" Stretch="Fill"/>
+
+        <TextBlock Name="tbStep" Grid.Row="1" Grid.Column="0" Text="Step:1"  FontSize="15" Foreground="WhiteSmoke" VerticalAlignment="Center" Margin="10 0 0 0"/>
+        <TextBlock Name="tbDiscrible" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="The discrible content" FontSize="15" VerticalAlignment="Center"/>
+        <Button Name="btnNext" Grid.Row="3" Grid.Column="2" Style="{StaticResource btnStyle}" Content="Next" Click="BtnNext_Click"/>
+        <Button Name="btnClose" Grid.Row="3" Grid.Column="2" Style="{StaticResource btnStyle}" Content="Close" Visibility="Collapsed" Click="BtnClose_Click"/>
     </Grid>
 </UserControl>

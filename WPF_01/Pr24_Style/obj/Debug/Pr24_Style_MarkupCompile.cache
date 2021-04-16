@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\App.xaml
-9-2089184500
+1054995998
 
-10-132002869
+7-1970299112
 131569487696
-MainWindow.xaml;SubItem\StackPanel.xaml;SubItem\StylesForGraphic.xaml;SubItem\StylesForText.xaml;SubItem\StylesWithBasedOn.xaml;SubItem\StylesWithSameKey.xaml;SubItem\StylesWithTargetType.xaml;SubItem\StylesWithTrigger.xaml;TestPage1.xaml;
+MainWindow.xaml;SubItem\StackPanel.xaml;SubItem\StylesForGraphic.xaml;SubItem\StylesForText.xaml;SubItem\StylesWithBasedOn.xaml;SubItem\StylesWithSameKey.xaml;SubItem\StylesWithTargetType.xaml;SubItem\StylesWithTrigger.xaml;SubItem\Triggers_Usage.xaml;TestPage1.xaml;
 
-True
+False
 

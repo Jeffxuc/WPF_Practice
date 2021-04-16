@@ -24,5 +24,6 @@ namespace Pr16_ListView
         {
             InitializeComponent();
         }
+
     }
 }

@@ -13,6 +13,7 @@ namespace Pr23_DataBinding.DigitalClock
 {
     class ClockTicker1:DependencyObject
     {
+        //在此自定义了依赖属性
         public static DependencyProperty SelfDateTimeProperty = 
             DependencyProperty.Register("SelfDateTime", typeof(DateTime), typeof(ClockTicker1));
 

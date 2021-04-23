@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+//自定义绑定的数据类型
 namespace Pr24_Style.SubItem
 {
     public class MyData

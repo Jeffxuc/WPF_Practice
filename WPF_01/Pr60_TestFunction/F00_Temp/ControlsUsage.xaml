@@ -16,12 +16,48 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
             <StackPanel x:Name="sp00" Background="Red" Height="100" Width="80"/>
             <StackPanel x:Name="sp01" Background="Black" Height="100" Width="80" Margin="40 0 0 0"/>
         </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Name="loadFileBtn" Content="UpLoad"  FontSize="20" Padding="10" Margin="10" Click="LoadFileBtn_Click"/>
+            <Button Name="loadFileBtn01" Content="UpLoad01"  FontSize="20" Padding="10" Margin="10" Click="LoadFileBtn01_Click"/>
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Border Background="AliceBlue" CornerRadius="30" BorderThickness="10" BorderBrush="Red" Margin="100,20"></Border>
+            <TextBlock Text="Hello this is just a test" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <StackPanel x:Name="sp" Grid.Column="1" Grid.Row="0" MouseDown="Sp_MouseDown" Background="Beige">
+            
+        </StackPanel>
+
+        <WrapPanel Name="wp02" Grid.Row="0" Grid.Column="2">
+            <Button Content="btn01" FontSize="30" Margin="5"/>
+            <Button Content="btn02" FontSize="30" Margin="5"/>
+            <Button Content="btn03" FontSize="30" Margin="5"/>
+            <Button Content="btn04" FontSize="30" Margin="5"/>
+            <Button Content="btn05" FontSize="30" Margin="5"/>
+            <Button Content="btn06" FontSize="30" Margin="5"/>
+        </WrapPanel>
+
+        <ScrollViewer Name="sv11" Grid.Row="1" Grid.Column="1" Margin="10" Background="BlueViolet" CanContentScroll="True"
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical">
+                <Button Content="btn01" FontSize="20" Margin="5"/>
+                <Button Content="btn02" FontSize="20" Margin="5"/>
+                <Button Content="btn03" FontSize="20" Margin="5"/>
+                <Button Content="btn04" FontSize="20" Margin="5"/>
+                <Button Content="btn05" FontSize="20" Margin="5"/>
+                <Button Content="btn06" FontSize="20" Margin="5"/>
+            </StackPanel>
+        </ScrollViewer>
         
     </Grid>
 </Window>

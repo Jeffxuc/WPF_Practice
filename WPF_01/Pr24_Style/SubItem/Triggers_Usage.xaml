@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Pr24_Style.SubItem">
     
-   
+   <!--1. Trigger应用样例-->
     <Style x:Key="BtnStyle01" TargetType="{x:Type Button}">
         <Style.Triggers>
             <Trigger Property="IsPressed" Value="True">
@@ -14,6 +14,7 @@
         </Style.Triggers>
     </Style>
 
+    <!--2. MultiTrigger应用实例-->
     <Style x:Key="BtnStyle02" TargetType="Button">
         <Style.Triggers>
             <MultiTrigger>
@@ -26,6 +27,7 @@
         </Style.Triggers>
     </Style>
 
+    <!--3. EventTrigger应用实例-->
     <Style x:Key="BtnStyle03" TargetType="Button">
         <Style.Triggers>
             <EventTrigger RoutedEvent="Click">
@@ -48,10 +50,12 @@
     </Style>
 
 
+    <!--4. DataTrigger和MultiDataTrigger应用实例-->
     <local:PlacesData x:Key="placesData"/>
     <Style x:Key="lsty" TargetType="ListBoxItem">
         <Style.Triggers>
             <DataTrigger Binding="{Binding Path=CurState}" Value="On">
+                <!--当CurState值为On时，会触发响应-->
                 <Setter Property="Foreground" Value="Red"/>
             </DataTrigger>
             <MultiDataTrigger>
@@ -63,7 +67,7 @@
             </MultiDataTrigger>
         </Style.Triggers>
     </Style>
-
+    <!--设置数据显示的样式-->
     <DataTemplate DataType="{x:Type local:MyData}">
         <Canvas Width="160" Height="20">
             <TextBlock Canvas.Left="0" Width="130" FontSize="12" Text="{Binding Path=CityName}"/>

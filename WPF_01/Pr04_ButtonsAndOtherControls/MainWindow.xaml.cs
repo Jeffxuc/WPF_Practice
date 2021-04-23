@@ -100,7 +100,7 @@ namespace Pr04_ButtonsAndOtherControls
     /// </summary>
     public class ClickBtnShowPicture:Window
     {
-
+        //将图片变成项目的资源，此时图片将称为项目的一部分被编译
         public ClickBtnShowPicture()
         {
             Title = "Image on the Button";

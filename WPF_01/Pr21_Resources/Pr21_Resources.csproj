@@ -58,6 +58,9 @@
     <Compile Include="MultiProgramShareResources\UseCommonResourceWindow.xaml.cs">
       <DependentUpon>UseCommonResourceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SubItem\CreateOrUseResourceByCode.xaml.cs">
+      <DependentUpon>CreateOrUseResourceByCode.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItem\EnvironmentInfo.xaml.cs">
       <DependentUpon>EnvironmentInfo.xaml</DependentUpon>
     </Compile>
@@ -85,6 +88,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MultiProgramShareResources\UseCommonResourceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\CreateOrUseResourceByCode.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WSpace\WPFProject\WPF_01\Pr21_Resources\obj\Debug\
+D:\WSpace\WPF_Practice\WPF_01\Pr21_Resources\obj\Debug\
 Pr21_Resources
 none
 false
 DEBUG;TRACE
-D:\WSpace\WPFProject\WPF_01\Pr21_Resources\App.xaml
-61353492048
+D:\WSpace\WPF_Practice\WPF_01\Pr21_Resources\App.xaml
+7-844818230
 
-12767584028
+13-661963649
 131569487696
-MainWindow.xaml;MultiProgramShareResources\MyResources1.xaml;MultiProgramShareResources\MyResources2.xaml;MultiProgramShareResources\UseCommonResourceWindow.xaml;SubItem\EnvironmentInfo.xaml;SubItem\Window1.xaml;
+MainWindow.xaml;MultiProgramShareResources\MyResources1.xaml;MultiProgramShareResources\MyResources2.xaml;MultiProgramShareResources\UseCommonResourceWindow.xaml;SubItem\CreateOrUseResourceByCode.xaml;SubItem\EnvironmentInfo.xaml;SubItem\Window1.xaml;
 
 True
 

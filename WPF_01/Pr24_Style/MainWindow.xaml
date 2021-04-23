@@ -24,7 +24,7 @@
     <StackPanel Margin="0 30 0 0">
         <Button Name="btn01" Style="{StaticResource BtnStyle01}" Content="Btn01" HorizontalAlignment="Center"/>
         <Button Name="btn02" Style="{StaticResource BtnStyle02}" Content="Btn01" FontFamily="Times New Roman" FontSize="20" HorizontalAlignment="Center"/>
-        <Button Name="btn03" Style="{StaticResource BtnStyle03}" Content="Btn01" HorizontalAlignment="Center"/>
+        <Button Name="btn03" Style="{StaticResource BtnStyle03}" Content="Btn01" HorizontalAlignment="Center" Margin="10"/>
 
         <ListBox HorizontalAlignment="Center" Width="180" Background="Honeydew"
                  ItemsSource="{Binding Source={StaticResource placesData}}" ItemContainerStyle="{StaticResource lsty}"/>

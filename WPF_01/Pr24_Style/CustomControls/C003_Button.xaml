@@ -1,0 +1,41 @@
+﻿<Page x:Class="Pr24_Style.CustomControls.C003_Button"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pr24_Style.CustomControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="C003_Button" ShowsNavigationUI="False">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="D003_ButtonStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10,5">
+            <Button Name="btn01" Margin="5" Content="The Btn01"/>
+            <Button Name="btn02" Margin="5" Content="Delete" Style="{StaticResource delBtnStyle}" Width="168" Height="36"/>
+            <Button Name="btn03" Margin="5" Content="Cancle" Style="{StaticResource cancelBtn}" Width="168" Height="36"/>
+            
+        </StackPanel>
+        <Button x:Name="btndel" Grid.Row="0" Grid.Column="1" Content="clickDis" VerticalAlignment="Top" Click="Btndel_Click"/>
+        <Button x:Name="btnenable" Grid.Row="0" Grid.Column="1" Content="clickDis" VerticalAlignment="Center" Click="Btnenable_Click"/>
+
+    </Grid>
+</Page>

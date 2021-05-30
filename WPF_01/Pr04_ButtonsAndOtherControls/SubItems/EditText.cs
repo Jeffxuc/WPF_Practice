@@ -28,9 +28,9 @@ namespace Pr04_ButtonsAndOtherControls.SubItems
             textBox.KeyDown += KeyDownOnTextBox;
             Content = textBox;
 
-            textBox.Text = File.ReadAllText(strPath01);
-            textBox.Focus();
-            textBox.CaretIndex = textBox.Text.Length; //设置光标的位置
+            //textBox.Text = File.ReadAllText(strPath01);
+            //textBox.Focus();
+            //textBox.CaretIndex = textBox.Text.Length; //设置光标的位置
             
         }
 

@@ -10,7 +10,7 @@
 
     <Page.Resources>
         <Style x:Key="btnSty" TargetType="Button">
-            <!--Style可以设置控件原有的属性值，如字体，颜色等-->
+            <!--Style可以设置改变控件原有的属性值，如：字体，颜色等-->
             <Setter Property="FontFamily" Value="Times New Roman"/>
             <Setter Property="FontSize" Value="40"/>
             <Setter Property="Background">

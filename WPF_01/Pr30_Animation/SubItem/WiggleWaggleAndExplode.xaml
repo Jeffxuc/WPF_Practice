@@ -17,7 +17,7 @@
                     <DoubleAnimation Storyboard.TargetName="elpse" Storyboard.TargetProperty="(Canvas.Top)" From="0" To="480" Duration="0:0:5" AutoReverse="True" />
                     <!--对于相同的属性可以放在对应的父标签中，避免在多个子标签中重复去写-->
                     <ParallelTimeline BeginTime="0:0:10" FillBehavior="Stop" Storyboard.TargetName="elpse">
-                        <DoubleAnimation Storyboard.TargetProperty="Width" From="50" To="500" Duration="0:0:2"/>
+                        <DoubleAnimation Storyboard.TargetProperty="Width" From="50" To="500" SpeedRatio="10" Duration="0:0:2"/>
                         <DoubleAnimation Storyboard.TargetProperty="Height" From="50" To="500" Duration="0:0:2"/>
                     </ParallelTimeline>
                 </Storyboard>

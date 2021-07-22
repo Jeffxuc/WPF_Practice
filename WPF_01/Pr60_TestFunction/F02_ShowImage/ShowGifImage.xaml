@@ -36,5 +36,20 @@
         <Grid Name="grid30" Grid.Row="3" Grid.Column="0" Background="Black" Margin="10,20"/>
         <Button Name="btn31" Grid.Row="3" Grid.Column="1" Content="switchGifPng" FontSize="25" VerticalAlignment="Center" Margin="10" Click="SwitchGifPngAnimate"/>
 
+        <TextBlock x:Name="tsxt" Grid.Row="3" Grid.Column="2" Margin="10" Width="105" FontSize="20" TextTrimming="CharacterEllipsis">
+            hello just test the 
+        </TextBlock>
+
+        <Grid x:Name="gif" Grid.Row="0" Grid.Column="3" Margin="10" Background="Black"/>
+        <Grid Grid.Row="1" Grid.Column="3">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button x:Name="btns1" Content="s1" Click="Btns1_Click"/>
+                <Button x:Name="btns2" Content="s2" Click="Btns2_Click"/>
+                <Button x:Name="btns3" Content="s3" Click="Btns3_Click"/>
+                <ToggleButton x:Name="tbtn" Content="toggleBtn" Click="Tbtn_Click" Checked="Tbtn_Checked" Unchecked="Tbtn_Unchecked"/>
+                <RadioButton x:Name="radioBtn" Content="radioBt" Click="RadioBtn_Click" Checked="RadioBtn_Checked" Unchecked="RadioBtn_Unchecked"/>
+            </StackPanel>
+            
+        </Grid>
     </Grid>
 </Page>

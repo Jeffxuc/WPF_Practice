@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("f02_showimage/gifimg/trending_animation_s1.gif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("f04_circleprogressbar/images/play-preview-normal@3x.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("f04_circleprogressbar/images/play-preview-normal-dark@3x.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("f04_circleprogressbar/images/play-preview-select@3x.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("f04_circleprogressbar/images/play-preview-select-dark@3x.png")]
 
 

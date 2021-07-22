@@ -78,16 +78,16 @@
     <Compile Include="SubItems\Border_Usage.xaml.cs">
       <DependentUpon>Border_Usage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SubItems\ComboBox.xaml.cs">
-      <DependentUpon>ComboBox.xaml</DependentUpon>
+    <Compile Include="SubItems\ComboBox_Usage.xaml.cs">
+      <DependentUpon>ComboBox_Usage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SubItems\EditRichText.cs" />
     <Compile Include="SubItems\EditText.cs" />
     <Compile Include="SubItems\RadioButton_Usage.xaml.cs">
       <DependentUpon>RadioButton_Usage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SubItems\ScrollViewer.xaml.cs">
-      <DependentUpon>ScrollViewer.xaml</DependentUpon>
+    <Compile Include="SubItems\ScrollViewer_Usage.xaml.cs">
+      <DependentUpon>ScrollViewer_Usage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SubItems\UseListView.xaml.cs">
       <DependentUpon>UseListView.xaml</DependentUpon>
@@ -108,7 +108,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SubItems\ComboBox.xaml">
+    <Page Include="SubItems\ComboBox_Usage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,7 +116,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SubItems\ScrollViewer.xaml">
+    <Page Include="SubItems\ScrollViewer_Usage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

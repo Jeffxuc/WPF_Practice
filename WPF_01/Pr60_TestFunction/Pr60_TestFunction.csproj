@@ -55,6 +55,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -110,6 +111,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="F04_CircleProgressBar\CircleBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="F04_CircleProgressBar\DisplayBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="F04_CircleProgressBar\ProgressRingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -142,6 +155,15 @@
     </Compile>
     <Compile Include="F03_EventUsage\EventUsage.xaml.cs">
       <DependentUpon>EventUsage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="F04_CircleProgressBar\CircleBar.xaml.cs">
+      <DependentUpon>CircleBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="F04_CircleProgressBar\DisplayBar.xaml.cs">
+      <DependentUpon>DisplayBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="F04_CircleProgressBar\ProgressRingControl.xaml.cs">
+      <DependentUpon>ProgressRingControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -198,6 +220,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="F02_ShowImage\GifImg\trending_animation_s1.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="F04_CircleProgressBar\Images\play-preview-normal%403x.png" />
+    <Resource Include="F04_CircleProgressBar\Images\play-preview-normal-dark%403x.png" />
+    <Resource Include="F04_CircleProgressBar\Images\play-preview-select%403x.png" />
+    <Resource Include="F04_CircleProgressBar\Images\play-preview-select-dark%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

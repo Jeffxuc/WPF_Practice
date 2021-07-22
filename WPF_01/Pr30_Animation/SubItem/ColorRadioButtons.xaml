@@ -15,21 +15,55 @@
         </Style>
     </Page.Resources>
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" 
-                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey} }">
-        <Label FontSize="30" Name="lb01" Margin="20">Hello This is just a Label 01</Label>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <RadioButton Content="Red">
-            <RadioButton.Triggers>
-                <EventTrigger RoutedEvent="RadioButton.Checked">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" 
+                Background="{DynamicResource {x:Static SystemColors.ControlBrushKey} }">
+            <Label FontSize="30" Name="lb01" Margin="20">Hello This is just a Label 01</Label>
+            <RadioButton Content="Red">
+                <RadioButton.Triggers>
+                    <EventTrigger RoutedEvent="RadioButton.Checked">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="lb01"  Storyboard.TargetProperty="(Label.Background).(SolidColorBrush.Color)" To="Red" Duration="0:0:1"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </RadioButton.Triggers>
+            </RadioButton>
+        </StackPanel>
+
+        <!--Color animation in code-->
+        <Button x:Name="btn01" Grid.Column="1" Content="animation" Margin="10" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Rectangle x:Name="rect" Grid.Column="1" Width="260" Height="80" VerticalAlignment="Bottom" Fill="Azure" Margin="10,5"/>
+
+        <!--Color animation in XAML-->
+        <Label x:Name="lb" Grid.Row="1" Grid.Column="0" Background="AliceBlue" Margin="10">
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Label.MouseDown">
                     <BeginStoryboard>
-                        <Storyboard>
-                            <ColorAnimation Storyboard.TargetName="lb01"  Storyboard.TargetProperty="(Label.Background).(SolidColorBrush.Color)" To="Red" Duration="0:0:1"/>
+                        <!--两种演示交替显示：先显示蓝到红，再显示黑到黄，如此循环-->
+                        <Storyboard TargetProperty="(Label.Background).(SolidColorBrush.Color)"  RepeatBehavior="Forever">
+                            <ColorAnimation From="Blue" To="Red" Duration="0:0:1" AutoReverse="True" />
+                            <ColorAnimation BeginTime="0:0:2" From="#000000" To="Yellow" Duration="0:0:2" AutoReverse="True"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
-            </RadioButton.Triggers>
-        </RadioButton>
-    </StackPanel>
+            </Label.Triggers>
+        </Label>
+
+    </Grid>
+
+    
 
 </Page>

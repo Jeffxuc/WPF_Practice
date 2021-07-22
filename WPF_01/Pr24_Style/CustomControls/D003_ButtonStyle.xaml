@@ -15,7 +15,7 @@
     </SolidColorBrush>
 
     <!--正常状态下按钮蓝色样式： style1-->
-    <LinearGradientBrush x:Key="normalBtnColor01" StartPoint="0,0" EndPoint="0,1">
+    <LinearGradientBrush x:Key="normalBtnColor01" StartPoint="0,0" EndPoint="1,0">
         <LinearGradientBrush.GradientStops>
             <GradientStop Offset="0.0" Color="#4d51ff"/>
             <GradientStop Offset="0.5" Color="#1050cf"/>

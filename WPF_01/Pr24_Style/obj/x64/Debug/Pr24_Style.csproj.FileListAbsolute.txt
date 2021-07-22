@@ -10,7 +10,6 @@ D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithBasedOn
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithSameKey.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithTargetType.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithTrigger.g.cs
-D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\TestPage1.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\App.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\Pr24_Style_MarkupCompile.cache
@@ -24,7 +23,6 @@ D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithSameKey
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithTargetType.baml
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\StylesWithTrigger.baml
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\Triggers_Usage.baml
-D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\TestPage1.baml
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\Pr24_Style.g.resources
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\Pr24_Style.Properties.Resources.resources
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\Pr24_Style.csproj.GenerateResource.cache
@@ -38,3 +36,10 @@ D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\D001_Scrol
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C003_Button.g.cs
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C003_Button.baml
 D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\D003_ButtonStyle.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C004_Slider.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C004_Slider.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\D004_SliderStyle.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\VisualStateManage.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\SubItem\VisualStateManage.baml
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C005_ProgressBar.g.cs
+D:\WSpace\WPF_Practice\WPF_01\Pr24_Style\obj\x64\Debug\CustomControls\C005_ProgressBar.baml

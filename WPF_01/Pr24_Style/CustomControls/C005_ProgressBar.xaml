@@ -1,0 +1,54 @@
+﻿<Window x:Class="Pr24_Style.CustomControls.C005_ProgressBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr24_Style.CustomControls"
+        mc:Ignorable="d"
+        Title="C005_ProgressBar" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="g00" Margin="30,20">
+            <Image x:Name="inner" Source="../Image/in.png"/>
+            <Image x:Name="outer" Source="../Image/out.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <RotateTransform x:Name="rotateAngle" Angle="0"/>
+                </Image.RenderTransform>
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Image.MouseLeftButtonDown">
+                        <BeginStoryboard>
+                            <Storyboard TargetProperty="RenderTransform.Angle">
+                                <DoubleAnimation From="0" To="360" Duration="0:0:1" RepeatBehavior="5x"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+        </Grid>
+
+        <!--<Grid x:Name="g01" Grid.Row="0" Grid.Column="1" Grid.RowSpan="10" Grid.ColumnSpan="10" Margin="10">
+            <Path Stroke="red" Fill="Blue"  StrokeThickness="10"
+                  Data="M 10,100 C 10,400 300,-200 300,100"/>
+        </Grid>-->
+        
+        
+        
+        
+        
+        
+        
+    </Grid>
+</Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Pr24_Style.CustomControls
 {
@@ -37,6 +38,23 @@ namespace Pr24_Style.CustomControls
         {
             btn02.IsEnabled = true;
             btn03.IsEnabled = true;
+        }
+
+        private void BtnShow_Click(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer durationTime = new DispatcherTimer()
+            {
+                Interval = new TimeSpan(0, 0, 2),
+
+            };
+
+            durationTime.Tick += new EventHandler((sender1, e1) =>
+            {
+                tb10.Visibility = Visibility.Collapsed;
+                durationTime.Stop();
+            });
+
+            durationTime.Start();
         }
     }
 }

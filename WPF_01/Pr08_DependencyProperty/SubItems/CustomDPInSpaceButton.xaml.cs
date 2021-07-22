@@ -37,7 +37,7 @@ namespace Pr08_DependencyProperty.SubItems
 
     public class SpaceButton:Button
     {
-        //1. 传统.NET定义方式：字段加属性
+        //********** 1. 传统.NET定义方式：字段加属性 **********
         private string _Text;
         public string Text
         {
@@ -52,8 +52,7 @@ namespace Pr08_DependencyProperty.SubItems
             }
         }
 
-
-        //2. 自定义 DependencyProperty
+        //********** 2. 自定义 DependencyProperty **********
         public static readonly DependencyProperty SpaceProperty;
         public int Space //对自定义的DependencyProperty 进行封装
         {
@@ -66,7 +65,7 @@ namespace Pr08_DependencyProperty.SubItems
                 return (int)GetValue(SpaceProperty);
             }
         }
-
+        
         static SpaceButton()
         {
             // 定义metadata
@@ -74,13 +73,13 @@ namespace Pr08_DependencyProperty.SubItems
             metadata.DefaultValue = 1;
             metadata.AffectsMeasure = true;
             metadata.Inherits = true;
-            metadata.PropertyChangedCallback += OnSpacePropertyChanged;
+            metadata.PropertyChangedCallback += OnSpacePropertyChanged;//当属性的值变化时，触发此函数
 
             // 注册DependencyProperty
-            SpaceProperty = DependencyProperty.Register("Space", typeof(int), typeof(SpaceButton), metadata,ValidateSpaceValue);
+            SpaceProperty = DependencyProperty.Register("Space", typeof(int), typeof(SpaceButton), metadata, ValidateSpaceValue);
         }
 
-        //回调方法：进行值的校验
+        // 对属性的值是否正确合法进行校验
         static bool ValidateSpaceValue(object obj)
         {
             int i = (int)obj;

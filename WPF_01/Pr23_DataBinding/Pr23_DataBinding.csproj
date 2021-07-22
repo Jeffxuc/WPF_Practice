@@ -97,6 +97,9 @@
       <DependentUpon>CustomElementBindingWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SubItem\SimpleElement.cs" />
+    <Compile Include="SubItem\SourceNotifyPropertyChanged.xaml.cs">
+      <DependentUpon>SourceNotifyPropertyChanged.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItem\TwoBindings.xaml.cs">
       <DependentUpon>TwoBindings.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SubItem\CustomElementBindingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubItem\SourceNotifyPropertyChanged.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -3,9 +3,12 @@
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\C001_ScrollBar.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\C002_ToggleButton.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\C003_Button.xaml;;
+FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\C004_Slider.xaml;;
+FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\C005_ProgressBar.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\D001_ScrollBar.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\D002_ToggleButtonStyle.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\D003_ButtonStyle.xaml;;
+FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\CustomControls\D004_SliderStyle.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\MainWindow.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\StylesForGraphic.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\StylesForText.xaml;;
@@ -14,5 +17,5 @@ FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\StylesWithSameKey.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\StylesWithTargetType.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\StylesWithTrigger.xaml;;
 FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\Triggers_Usage.xaml;;
-FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\TestPage1.xaml;;
+FD:\WSpace\WPF_Practice\WPF_01\Pr24_Style\SubItem\VisualStateManage.xaml;;
 

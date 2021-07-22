@@ -37,5 +37,10 @@
         <Button x:Name="btndel" Grid.Row="0" Grid.Column="1" Content="clickDis" VerticalAlignment="Top" Click="Btndel_Click"/>
         <Button x:Name="btnenable" Grid.Row="0" Grid.Column="1" Content="clickDis" VerticalAlignment="Center" Click="Btnenable_Click"/>
 
+        <TextBox x:Name="tb10" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="10">
+            Hello just a test 3 seconds.
+        </TextBox>
+        <Button x:Name="btnShow" Grid.Row="1" Content="show the text a while" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                FontSize="20" Click="BtnShow_Click"/>
     </Grid>
 </Page>

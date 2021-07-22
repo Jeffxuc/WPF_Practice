@@ -1,0 +1,35 @@
+﻿<Page x:Class="Pr24_Style.SubItem.VisualStateManage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pr24_Style.SubItem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VisualStateManage">
+
+    <Page.Resources>
+        
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width='*'/>
+            <ColumnDefinition Width='*'/>
+            <ColumnDefinition Width='*'/>
+            <ColumnDefinition Width='*'/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="rect00" Margin="10,5" MouseEnter="Rect00_MouseEnter" MouseLeave="Rect00_MouseLeave">
+            <VisualStateManager.VisualStateGroups>
+                
+            </VisualStateManager.VisualStateGroups>
+        </Rectangle>
+        
+    </Grid>
+</Page>

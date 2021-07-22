@@ -84,9 +84,15 @@
     <Compile Include="CustomControls\C003_Button.xaml.cs">
       <DependentUpon>C003_Button.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\C004_Slider.xaml.cs">
+      <DependentUpon>C004_Slider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\C005_ProgressBar.xaml.cs">
+      <DependentUpon>C005_ProgressBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubItem\Triggers_UsageData.cs" />
-    <Compile Include="TestPage1.xaml.cs">
-      <DependentUpon>TestPage1.xaml</DependentUpon>
+    <Compile Include="SubItem\VisualStateManage.xaml.cs">
+      <DependentUpon>VisualStateManage.xaml</DependentUpon>
     </Compile>
     <Page Include="CustomControls\C001_ScrollBar.xaml">
       <SubType>Designer</SubType>
@@ -100,6 +106,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomControls\C004_Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\C005_ProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomControls\D001_ScrollBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CustomControls\D003_ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\D004_SliderStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,7 +174,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TestPage1.xaml">
+    <Page Include="SubItem\VisualStateManage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -187,6 +205,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Image\in.png" />
+    <Resource Include="Image\out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\normal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

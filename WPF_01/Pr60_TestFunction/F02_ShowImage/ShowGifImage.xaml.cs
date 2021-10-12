@@ -25,6 +25,7 @@ namespace Pr60_TestFunction.F02_ShowImage
     public partial class ShowGifImage : Page
     {
         DispatcherTimer dispatcherTimer = new DispatcherTimer();
+        ImageAnimationController gifSpeedController = null;
 
         Image image03 = new Image();
 
@@ -32,10 +33,6 @@ namespace Pr60_TestFunction.F02_ShowImage
         {
             InitializeComponent();
             Image img = new Image();
-
-
-            
-            
 
             BitmapImage bitmapImage = new BitmapImage(new Uri("pack://application:,,,/Pr60_TestFunction;component/F02_ShowImage/GifImg/theme_2_animation.gif"));
             Image image = new Image();
@@ -93,9 +90,17 @@ namespace Pr60_TestFunction.F02_ShowImage
             image.Margin = new Thickness(10);
             ImageBehavior.SetAnimatedSource(image03, bitmapImage03);
             gif.Children.Add(image03);
- 
+
+
+            // Get the speed ratio of gif.
+            ImageBehavior.AddAnimationLoadedHandler(ImgS3, new RoutedEventHandler((s2, e2) =>
+            {
+                gifSpeedController = ImageBehavior.GetAnimationController(ImgS3);
+            }));
+
         }
 
+        #region
         private void BtnOnPlay_Click(object sender, RoutedEventArgs e)
         {
             int repeatTime = int.Parse(inputTxt.Text);
@@ -157,7 +162,7 @@ namespace Pr60_TestFunction.F02_ShowImage
             grid30.Children.Add(imgGif);
 
             ImageAnimationController gifController = null;
-            //GetAnimationController will return null if the animation is not yet fully loaded;
+            //******** GetAnimationController will return null if the animation is not yet fully loaded ***********
             ImageBehavior.AddAnimationLoadedHandler(imgGif, new RoutedEventHandler((s2, e2) =>
              {
                  gifController = ImageBehavior.GetAnimationController(imgGif);
@@ -205,14 +210,17 @@ namespace Pr60_TestFunction.F02_ShowImage
 
         private void Btns1_Click(object sender, RoutedEventArgs e)
         {
+            ImageBehavior.GetAnimationSpeedRatio(image03);
             ImageBehavior.SetAnimationSpeedRatio(image03, 2);
             ImageBehavior.SetRepeatBehavior(image03, new RepeatBehavior(2));
+            ImageBehavior.GetAnimationSpeedRatio(image03);
         }
 
         private void Btns2_Click(object sender, RoutedEventArgs e)
         {
             ImageBehavior.SetAnimationSpeedRatio(image03, 3);
             ImageBehavior.SetRepeatBehavior(image03, new RepeatBehavior(3));
+            
         }
 
         private void Btns3_Click(object sender, RoutedEventArgs e)
@@ -249,6 +257,24 @@ namespace Pr60_TestFunction.F02_ShowImage
 
         private void RadioBtn_Unchecked(object sender, RoutedEventArgs e)
         {
+
+        }
+        #endregion
+        private void GetSpeed_Click(object sender, RoutedEventArgs e)
+        {
+            //ImageAnimationController gifSpeedController = null;
+            //ImageBehavior.AddAnimationLoadedHandler(ImgS2, new RoutedEventHandler((s2, e2) =>
+            //{
+            //    gifSpeedController = ImageBehavior.GetAnimationController(ImgS2);
+            //}));
+
+            if(gifSpeedController != null)
+            {
+                //double? speedRatio = ImageBehavior.GetAnimationSpeedRatio();
+                //Duration? duration = ImageBehavior.GetAnimationDuration(ImgS2);
+                TimeSpan tp = gifSpeedController.Duration;
+                
+            }
 
         }
     }

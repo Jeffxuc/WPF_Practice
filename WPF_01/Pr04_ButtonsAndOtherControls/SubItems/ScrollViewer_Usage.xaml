@@ -52,6 +52,30 @@
             </WrapPanel>
         </ScrollViewer>
 
+        <ScrollViewer x:Name="scv" Grid.Row="1" Grid.Column="0" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <WrapPanel x:Name="wp1" Orientation="Vertical" Visibility="Visible">
+                    <Rectangle Width="80" Height="60" Fill="Pink" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="Black" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="Blue" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="red" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="Azure" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="red" Margin="10"/>
+                    <Rectangle Width="80" Height="60" Fill="Yellow" Margin="10"/>
+                </WrapPanel>
+                <WrapPanel x:Name="wp2" Orientation="Vertical" Visibility="Collapsed">
+                    <Button x:Name="btn11" Content="The Btn01"/>
+                    <Button x:Name="btn12" Content="The Btn02"/>
+                    <Button x:Name="btn13" Content="The Btn03"/>
+                    <Button x:Name="btn14" Content="The Btn04"/>
+                    <Button x:Name="btn15" Content="The Btn05"/>
+                    <Button x:Name="btn16" Content="The Btn06"/>
+                    <Button x:Name="btn17" Content="The Btn07"/>
+                </WrapPanel>
+            </StackPanel>
+            
+        </ScrollViewer>
+
         
         
 

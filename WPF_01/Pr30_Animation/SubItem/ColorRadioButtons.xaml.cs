@@ -27,7 +27,23 @@ namespace Pr30_Animation.SubItem
             InitializeComponent();
 
             btn01.Click += PreviewAnimation;
-            
+
+            GradientStopCollection gradientStops = new GradientStopCollection();
+            GradientStop gradientStop1 = new GradientStop((Color)ColorConverter.ConvertFromString("#8A8890"), 0);
+            GradientStop gradientStop2 = new GradientStop((Color)ColorConverter.ConvertFromString("#B0B0B0"), 0.39);
+            GradientStop gradientStop3 = new GradientStop((Color)ColorConverter.ConvertFromString("#E6E6E6"), 0.63);
+            GradientStop gradientStop4 = new GradientStop((Color)ColorConverter.ConvertFromString("#B0B0B0"), 1);
+            gradientStops.Add(gradientStop1);
+            gradientStops.Add(gradientStop2);
+            gradientStops.Add(gradientStop3);
+            gradientStops.Add(gradientStop4);
+
+            LinearGradientBrush lgd = new LinearGradientBrush(gradientStops, 90);
+            //lgd.StartPoint = new Point(0, 1);
+            //lgd.EndPoint = new Point(1, 0);
+            rec12.Fill = lgd;
+
+
         }
 
         private void PreviewAnimation(object sender, RoutedEventArgs e)

@@ -10,6 +10,32 @@
     <Window.Resources>
         <ResourceDictionary>
             <local:ComboBoxData x:Key="myComboBoxData"/>
+
+            <Style x:Key="recStyle" TargetType="{x:Type Rectangle}">
+                <Setter Property="Height" Value="20"/>
+                <Setter Property="Width" Value="276"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="comboxStyle" TargetType="ComboBox">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ComboBox">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="#000000"/>
+                                <Rectangle Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="276"/>
+                                <Polygon Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Points="0,0 12,0, 6,9"  Fill="#272727" />
+                                <ContentPresenter Grid.Column="0" Margin="6,6,0,6" Content="{TemplateBinding SelectionBoxItem}"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </Window.Resources>
     
@@ -17,9 +43,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -39,6 +66,13 @@
             <TextBlock Text="03"/>
             <TextBlock Text="04"/>
         </ComboBox>
-        
+
+        <ComboBox x:Name="myCombox" Grid.Row="0" Grid.Column="2" Width="312" Height="32" SelectedIndex="1"
+                  Margin="20,20" Style="{StaticResource comboxStyle}">
+            <Rectangle x:Name="rec1" Style="{StaticResource recStyle}" Fill="Red"/>
+            <Rectangle x:Name="rec2" Style="{StaticResource recStyle}" Fill="BlueViolet"/>
+            <Rectangle x:Name="rec3" Style="{StaticResource recStyle}" Fill="Turquoise"/>
+        </ComboBox>
+
     </Grid>
 </Window>

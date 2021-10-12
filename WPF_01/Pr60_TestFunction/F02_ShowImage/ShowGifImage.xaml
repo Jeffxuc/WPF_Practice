@@ -15,6 +15,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -36,9 +37,6 @@
         <Grid Name="grid30" Grid.Row="3" Grid.Column="0" Background="Black" Margin="10,20"/>
         <Button Name="btn31" Grid.Row="3" Grid.Column="1" Content="switchGifPng" FontSize="25" VerticalAlignment="Center" Margin="10" Click="SwitchGifPngAnimate"/>
 
-        <TextBlock x:Name="tsxt" Grid.Row="3" Grid.Column="2" Margin="10" Width="105" FontSize="20" TextTrimming="CharacterEllipsis">
-            hello just test the 
-        </TextBlock>
 
         <Grid x:Name="gif" Grid.Row="0" Grid.Column="3" Margin="10" Background="Black"/>
         <Grid Grid.Row="1" Grid.Column="3">
@@ -51,5 +49,19 @@
             </StackPanel>
             
         </Grid>
+
+        <Button x:Name="getSpeed" Grid.Row="3" Grid.Column="2" Margin="40,25" Content="GetSpeed" Click="GetSpeed_Click"/>
+
+        <Image x:Name="ImgS1" Grid.Row="4" Grid.Column="0" Margin="10,5" gif:ImageBehavior.RepeatBehavior="Forever"
+               gif:ImageBehavior.AnimatedSource="./GifImg2/Theme1/theme_animation_s1.gif"/>
+
+        <Image x:Name="ImgS2" Grid.Row="4" Grid.Column="1" Margin="10,5" gif:ImageBehavior.RepeatBehavior="Forever"
+               gif:ImageBehavior.AnimatedSource="./GifImg2/Theme1/theme_animation_s2_70.gif"/>
+
+        <Image x:Name="ImgS3" Grid.Row="4" Grid.Column="2" Margin="10,5" 
+               gif:ImageBehavior.AnimatedSource="./GifImg2/Theme1/theme_animation_s3_40.gif"/>
+
+
+
     </Grid>
 </Page>

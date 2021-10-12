@@ -22,6 +22,39 @@ namespace Pr04_ButtonsAndOtherControls.SubItems
         public ScrollViewer_Usage()
         {
             InitializeComponent();
+
+            double pos1 = 0, pos2 = 0;
+
+            btn01.Click += (s1, e1) =>
+            {
+                wp1.Visibility = Visibility.Visible;
+                wp2.Visibility = Visibility.Collapsed;
+
+                scv.ScrollToVerticalOffset(pos1);
+            };
+
+            btn02.Click += (s2, e2) =>
+            {
+                wp1.Visibility = Visibility.Collapsed;
+                wp2.Visibility = Visibility.Visible;
+
+                scv.ScrollToVerticalOffset(pos2);
+            };
+
+            scv.MouseLeave += (s3, e3) =>
+            {
+                if (wp1.Visibility == Visibility.Visible)
+                {
+                    pos1 = scv.ContentVerticalOffset;
+                }
+
+                if (wp2.Visibility == Visibility.Visible)
+                {
+                    pos2 = scv.ContentVerticalOffset;
+                }
+            };
+
+
         }
     }
 }

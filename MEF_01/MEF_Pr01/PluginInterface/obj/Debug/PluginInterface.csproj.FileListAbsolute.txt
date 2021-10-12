@@ -1,6 +1,0 @@
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\bin\Debug\PluginInterface.dll
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\bin\Debug\PluginInterface.pdb
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\obj\Debug\PluginInterface.csprojAssemblyReference.cache
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\obj\Debug\PluginInterface.csproj.CoreCompileInputs.cache
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\obj\Debug\PluginInterface.dll
-D:\WSpace\WPF\MEF_01\MEF_Pr01\PluginInterface\obj\Debug\PluginInterface.pdb

@@ -5,14 +5,32 @@
              >
 
     <!--<Application.StartupUri>
+        F02_ShowImage/ShowGifImage.xaml
+    </Application.StartupUri>-->
+
+    <!--<Application.StartupUri>
         F04_CircleProgressBar/DisplayBar.xaml
     </Application.StartupUri>-->
 
-    <Application.StartupUri>
+    <!--<Application.StartupUri>
         F02_ShowImage/ShowGifImage.xaml
+    </Application.StartupUri>-->
+
+    <!--<Application.StartupUri>
+        F05_ToolTips/ToolTip_Usage.xaml
+    </Application.StartupUri>-->
+
+    <!--<Application.StartupUri>
+        F06_AlignEvenly/AlignEvenly.xaml
+    </Application.StartupUri>-->
+    
+    <Application.StartupUri>
+        F07_TextBlockOperate/GetLinesContent.xaml
     </Application.StartupUri>
 
-    
+
+
+
     <Application.Resources>
          
     </Application.Resources>

@@ -28,7 +28,13 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Slider x:Name="slider00"  Margin="15,10" SmallChange="5"  TickPlacement="BottomRight" TickFrequency="10"/>
+        <Slider x:Name="slider00"  Margin="15,10" Maximum="100" Minimum="0" TickPlacement="BottomRight"
+                TickFrequency="10"/>
+        <ScrollBar Margin="15,60" Width="180" Height="8" Orientation="Horizontal"/>
+
+        <Slider x:Name="slider01" Grid.Row="0" Grid.Column="1" Margin="15,10" Style="{StaticResource SpeedSlider}" Value="2">
+            
+        </Slider>
 
     </Grid>
 </Page>

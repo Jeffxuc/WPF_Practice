@@ -1,1 +1,7 @@
-*/Debug/*
+.vs
+
+bin
+obj
+
+AppPackages
+

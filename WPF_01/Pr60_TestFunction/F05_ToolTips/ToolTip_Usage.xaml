@@ -1,0 +1,115 @@
+﻿<Page x:Class="Pr60_TestFunction.F05_ToolTips.ToolTip_Usage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pr60_TestFunction.F05_ToolTips"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ToolTip_Usage" ShowsNavigationUI="False">
+
+    <Page.Resources>
+        <local:convertVal x:Key="conver"/>
+        <!--<Style x:Key="TooltipStyle" TargetType="{x:Type ToolTip}">
+            <Setter Property="MaxWidth" Value="228"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="#FF565656"/>
+            <Setter Property="FontFamily" Value="{DynamicResource BaseFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#FFFFFFFF"/>
+            <Setter Property="Visibility" Value="{Binding RelativeSource={RelativeSource Self}, Path=PlacementTarget, Converter={StaticResource conver}}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToolTip}">
+                        <Border CornerRadius="4" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <TextBlock Padding="8,4" 
+                               Margin="0,-1,0,0" 
+                               TextWrapping="Wrap" 
+                               FontFamily="{TemplateBinding FontFamily}" 
+                               FontSize="{TemplateBinding FontSize}"
+                               Foreground="{TemplateBinding Foreground}" 
+                               Text="{TemplateBinding Content}">
+                            </TextBlock>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>-->
+
+        <!--注意：此处的Border由于要显示ShadowEffect，且其阴影模糊的深度为7px，所以必须要为其留够margin以显示shadow
+                 否则shadow阴影会被切掉，无法显示-->
+        <Style x:Key="tipStyle" TargetType="ToolTip">
+            <Setter Property="Width" Value="174"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Setter Property="FontFamily" Value="STHeitiTC"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Margin" Value="0,0,10,10"/>
+            <Setter Property="Placement" Value="Bottom"/>
+            <Setter Property="HorizontalOffset" Value="114"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToolTip">
+                        <Border CornerRadius="8" Background="#f2f2f2" BorderThickness="0" Padding="14,8,20,8">
+                            <Border.Effect>
+                                <DropShadowEffect Direction="300" Color="#000000" Opacity="0.2" BlurRadius="8" ShadowDepth="7"/>
+                            </Border.Effect>
+                            <TextBlock Text="{TemplateBinding Content}" TextWrapping="Wrap"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+
+        <!--<Style x:Key="wordTrim" TargetType="TextBlock">
+            <Setter Property="Background" Value="Pink"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+            <Setter Property="Visibility" Value="{Binding RelativeSource={RelativeSource Self},Path=PlacementTarget,
+                Converter={StaticResource conver}}"/>
+        </Style>-->
+        
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="tb00" Text="hello just a test thanks for your" Width="100" Height="30" FontSize="15" Background="Pink"
+                   VerticalAlignment="Top" TextTrimming="CharacterEllipsis">
+            <ToolTipService.ToolTip>
+                <ToolTip Content="{Binding RelativeSource={RelativeSource Self},Path=PlacementTarget.Text,Mode=OneWay}"
+                         Placement="Mouse" Background="Pink" Foreground="Black"
+                         Visibility="{Binding RelativeSource={RelativeSource Self},Path=PlacementTarget,Converter={StaticResource conver}}"/>
+            </ToolTipService.ToolTip>
+        </TextBlock>
+
+        <Image x:Name="tipImg" Grid.Column="1" Source="../ComImgs/img_2.png" Width="60" VerticalAlignment="Center">
+            <ToolTipService.ToolTip>
+                <ToolTip Style="{StaticResource tipStyle}" 
+                         Content="睡眠與休眠狀態會關閉小螢幕，並且也不顯示關機動畫"/>
+            </ToolTipService.ToolTip>
+        </Image>
+
+        <Button Grid.Row="0" Grid.Column="2" Content="btn02" Margin="60,40">
+            
+        </Button>
+
+        <Border Grid.Row="1" Grid.Column="0" Background="Red" Opacity="0.5" BorderThickness="0" CornerRadius="8" Margin="40,30">
+            <Border.Effect>
+                <DropShadowEffect Direction="300" Color="Black" Opacity="0.5" BlurRadius="8" ShadowDepth="6.9"/>
+            </Border.Effect>
+        </Border>
+
+    </Grid>
+</Page>

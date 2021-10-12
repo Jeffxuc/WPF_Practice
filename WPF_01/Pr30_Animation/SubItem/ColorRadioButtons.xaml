@@ -48,19 +48,32 @@
         <Rectangle x:Name="rect" Grid.Column="1" Width="260" Height="80" VerticalAlignment="Bottom" Fill="Azure" Margin="10,5"/>
 
         <!--Color animation in XAML-->
-        <Label x:Name="lb" Grid.Row="1" Grid.Column="0" Background="AliceBlue" Margin="10">
+        <Label x:Name="lb" Grid.Row="1" Grid.Column="0" Background="Blue" Margin="10">
             <Label.Triggers>
                 <EventTrigger RoutedEvent="Label.MouseDown">
                     <BeginStoryboard>
                         <!--两种演示交替显示：先显示蓝到红，再显示黑到黄，如此循环-->
                         <Storyboard TargetProperty="(Label.Background).(SolidColorBrush.Color)"  RepeatBehavior="Forever">
-                            <ColorAnimation From="Blue" To="Red" Duration="0:0:1" AutoReverse="True" />
-                            <ColorAnimation BeginTime="0:0:2" From="#000000" To="Yellow" Duration="0:0:2" AutoReverse="True"/>
+                            <ColorAnimation From="Blue" To="White" Duration="0:0:4" AutoReverse="False" />
+                            <ColorAnimation BeginTime="0:0:4" From="#000000" To="Red" Duration="0:0:4" AutoReverse="False"/>
                         </Storyboard>
                     </BeginStoryboard>
                 </EventTrigger>
             </Label.Triggers>
         </Label>
+
+        <Rectangle Grid.Row="1" Grid.Column="1"  Width="209" Height="118" StrokeThickness="0" Stroke="Red">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1,0">
+                    <GradientStop Color="#8A8890" Offset="0"/>
+                    <GradientStop Color="#B0B0B0" Offset="0.5"/>
+                    <GradientStop Color="#E6E6E6" Offset="0.7"/>
+                    <GradientStop Color="#B0B0B0" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle x:Name="rec12" Grid.Row="1" Grid.Column="2" Width="209" Height="120"/>
 
     </Grid>
 

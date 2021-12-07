@@ -8,6 +8,10 @@
         F02_ShowImage/ShowGifImage.xaml
     </Application.StartupUri>-->
 
+    <Application.StartupUri>
+        F02_ShowImage/ShowImages.xaml
+    </Application.StartupUri>
+
     <!--<Application.StartupUri>
         F04_CircleProgressBar/DisplayBar.xaml
     </Application.StartupUri>-->
@@ -24,9 +28,9 @@
         F06_AlignEvenly/AlignEvenly.xaml
     </Application.StartupUri>-->
     
-    <Application.StartupUri>
+    <!--<Application.StartupUri>
         F07_TextBlockOperate/GetLinesContent.xaml
-    </Application.StartupUri>
+    </Application.StartupUri>-->
 
 
 

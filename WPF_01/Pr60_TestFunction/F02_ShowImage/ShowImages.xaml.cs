@@ -57,7 +57,12 @@ namespace Pr60_TestFunction.F02_ShowImage
             Grid.SetRow(image03, 2);
             Grid.SetColumn(image03, 0);
 
-           
+            tb.GotFocus += (s2, e2) =>
+            {
+                
+            };
+
         }
+
     }
 }

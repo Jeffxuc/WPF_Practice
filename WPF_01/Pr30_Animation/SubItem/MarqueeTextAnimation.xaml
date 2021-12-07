@@ -8,27 +8,54 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Marquee Text Animation">
 
-    <!--<Button Width="100" Height="30" Background="White">
-        <Canvas Name="cav" ClipToBounds="True" Loaded="Cav_Loaded">
-            <Canvas.Resources>
-                <Style TargetType="{x:Type TextBox}">
-                    <Setter Property="FontSize" Value="16"/>
-                    <Setter Property="Margin" Value="10"/>
-                    <Setter Property="VerticalAlignment" Value="Center"/>
-                </Style>
-            </Canvas.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-            <TextBox Name="textBox01" Width="100" Height="30" Canvas.Left="10" Canvas.Top="20">
-                The text in the btn01 is scrolling like Marquee.
-            </TextBox>
+        <Canvas  Name="cav" Grid.Row="0" ClipToBounds="True" Background="Red"   Height="100" Width="300" Loaded="Cav_Loaded">
+            <TextBlock Name="textBox01" Margin="0,40" FontSize="25" >The text in the btn01 is scrolling like Marquee.</TextBlock>
         </Canvas>
-    </Button>-->
 
-    <Canvas Background="White" >
-        <Canvas Margin="50" Canvas.Left="10" Canvas.Top="10" ClipToBounds="True" Name="cav" Background="Red"   Height="100" Width="300"  >
-            <TextBlock Margin="0,40" FontSize="25" Name="textBox01">The text in the btn01 is scrolling like Marquee.</TextBlock>
+        <Button x:Name="starMarqBtn" Grid.Row="1" Grid.Column="1" Content="Start Marquee" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="100" Margin="20,20,0,0"/>
+        <Button x:Name="stopMarqBtn" Grid.Row="1" Grid.Column="1" Content="Stop Marquee" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="100" Margin="20,20,0,0"/>
+
+        <Canvas x:Name="imgCanv" Grid.Row="1" Grid.Column="0" Width="368" Height="92" ClipToBounds="True" Background="Black">
+            <Image x:Name="imgPrv" Source="../Images/testImg01.png" Width="368"/>
         </Canvas>
-    </Canvas>
+
+        <Canvas x:Name="canvPreview" Grid.Row="2" Grid.Column="0" Width="368" Height="92" ClipToBounds="True" Background="Black">
+            <Image x:Name="img02" Width="368" Height="92" Canvas.Left="0"/>
+        </Canvas>
+        <WrapPanel Grid.Row="2" Grid.Column="1" Margin="10,5">
+            <Button x:Name="preImg1Btn" Content="ShowImage01" Margin="10,5,0,0"/>
+            <Button x:Name="preImg2Btn" Content="ShowImage02" Margin="10,5,0,0"/>
+            <Button x:Name="preImg3Btn" Content="ShowImage03" Margin="10,5,0,0"/>
+        </WrapPanel>
+
+        <Canvas x:Name="canvPreview01" Grid.Row="0" Grid.Column="1" Width="368" Height="92" ClipToBounds="True" Background="Black">
+            <Image x:Name="img01" Width="368" Canvas.Left="0" Source="../Images/personImg06_Bg.png"/>
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Canvas.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="img01" Storyboard.TargetProperty="(Canvas.Left)" 
+                                             From="368" To="-368" RepeatBehavior="Forever" Duration="0:0:5"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
+        </Canvas>
+        
+        
+    </Grid>
 
 
 </Page>

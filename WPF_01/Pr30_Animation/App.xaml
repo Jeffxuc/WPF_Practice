@@ -4,10 +4,10 @@
              xmlns:local="clr-namespace:Pr30_Animation">
 
     <!-- 在此将Application的 StartupUri 属性以单独的PropertyElement来进行设置。-->
-    <!--<Application.StartupUri>SubItem/MarqueeTextAnimation.xaml</Application.StartupUri>-->
+    <Application.StartupUri>SubItem/MarqueeTextAnimation.xaml</Application.StartupUri>
     <!--<Application.StartupUri>MarqueeText/MarqueeMethod04.xaml</Application.StartupUri>-->
     
-    <Application.StartupUri>SubItem/ColorRadioButtons.xaml</Application.StartupUri>
+    <!--<Application.StartupUri>SubItem/ColorRadioButtons.xaml</Application.StartupUri>-->
     
 
     <Application.Resources>

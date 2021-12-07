@@ -9,6 +9,146 @@
     
     <Window.Resources>
         <BitmapImage x:Key="imgKey" UriSource="./Images/06.jpeg"/>
+
+        <Style x:Key="tbTxt" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="SegoeUI"/>
+            <Setter Property="Width" Value="228"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Focusable" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border x:Name="bd" BorderBrush="#000000" BorderThickness="0,0,0,1" Background="Pink">
+                            <ContentPresenter Content="{TemplateBinding Text}" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="BorderBrush" Value="Red"/>
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="False"/>
+                                    <Condition Property="IsFocused" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.Setters>
+                                    <Setter TargetName="bd" Property="BorderBrush" Value="Blue"/>
+                                </MultiTrigger.Setters>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="inputTBStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="SegoeUI"/>
+            <Setter Property="Width" Value="228"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Focusable" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <Border x:Name="textBoxBorder" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}">
+                            </Border>
+                            <TextBox x:Name="txt" TextAlignment="Left" BorderThickness="0" VerticalContentAlignment="Bottom" Padding="0,0,0,1" Margin="{TemplateBinding BorderThickness}" Background="Transparent"
+                                     Text="{TemplateBinding Text}"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True" SourceName="txt">
+                                <Setter TargetName="textBoxBorder" Property="BorderBrush" Value="BlueViolet"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="False"/>
+                                    <Condition Property="IsFocused" Value="True" SourceName="txt"/>
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.Setters>
+                                    <Setter TargetName="textBoxBorder"  Property="BorderBrush" Value="Red"/>
+                                </MultiTrigger.Setters>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="tbTxt02" TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="SegoeUI"/>
+            <Setter Property="Width" Value="228"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Focusable" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+            <Setter Property="BorderThickness" Value="0,0,0,3"/>
+            <Setter Property="BorderBrush" Value="Yellow"/>
+            
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </Trigger>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="False"/>
+                        <Condition Property="IsFocused" Value="True"/>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="BorderBrush" Value="Blue"/>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="tbTxt03" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="SegoeUI"/>
+            <Setter Property="Width" Value="228"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Focusable" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+            <Setter Property="BorderThickness" Value="0,0,0,2"/>
+            <Setter Property="BorderBrush" Value="Yellow"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="CaretBrush" Value="Black"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border x:Name="bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="CornflowerBlue" SnapsToDevicePixels="True" Width="{TemplateBinding Width}">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False"  VerticalScrollBarVisibility="Hidden"
+                                          HorizontalAlignment="{TemplateBinding HorizontalAlignment}" Width="{TemplateBinding Width}" Background="HotPink"/>
+                        </Border>
+                        
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="BorderBrush" Value="Red"/>
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="False"/>
+                                    <Condition Property="IsFocused" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.Setters>
+                                    <Setter TargetName="bd" Property="BorderBrush" Value="Blue"/>
+                                </MultiTrigger.Setters>
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     
     
@@ -17,8 +157,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -49,5 +191,21 @@
         <!--3. 使用资源的Key-Value的形式-->
         <Image Grid.Row="2" Grid.Column="2" Source="{StaticResource imgKey}"/>
 
+
+        <TextBox x:Name="tb" Grid.Row="3" Style="{StaticResource tbTxt}" Margin="5">
+            Just a Test
+        </TextBox>
+
+        <TextBox x:Name="tb2" Grid.Row="3" Grid.Column="1" Style="{StaticResource tbTxt03}" Margin="5" Text="TextBox 02"/>
+        <ScrollViewer Grid.Row="3" Grid.Column="2">
+            <StackPanel x:Name="sp">
+                <TextBox x:Name="tb3" Grid.Row="3" Grid.Column="1" Style="{StaticResource tbTxt03}" Text="TextBox 03" Width="{Binding ElementName=sp,Path=Width}"/>
+                <TextBox x:Name="tb4" Grid.Row="3" Grid.Column="1"  Margin="5" Text="TextBox 04"/>
+                <TextBox x:Name="tb5" Grid.Row="3" Grid.Column="1" Style="{StaticResource tbTxt03}" Margin="5" Text="TextBox 05"/>
+                <TextBox x:Name="tb6" Grid.Row="3" Grid.Column="1" Style="{StaticResource tbTxt03}" Margin="5" Text="TextBox 06"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <TextBox x:Name="tb7" Grid.Row="3" Grid.Column="3"  Margin="5" Text="TextBox 07" VerticalAlignment="Center"/>
     </Grid>
 </Window>

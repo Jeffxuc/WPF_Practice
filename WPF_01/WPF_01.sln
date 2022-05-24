@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1321
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr01_Basic", "Pr01_Basic\Pr01_Basic.csproj", "{F19515A8-2241-48A6-B37D-2571AE5192EA}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr08_DependencyProperty", "Pr08_DependencyProperty\Pr08_DependencyProperty.csproj", "{D6903555-C4A8-4E7D-90A0-742017B97112}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr41_ItemsControl", "Pr41_ItemsControl\Pr41_ItemsControl.csproj", "{0CC06357-9624-4EBA-A38F-764A2DA2AB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr61_MVVMPractice", "Pr61_MVVMPractice\Pr61_MVVMPractice.csproj", "{682030CC-8B2E-4931-B0E3-8EDEC8246700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -221,6 +223,14 @@ Global
 		{0CC06357-9624-4EBA-A38F-764A2DA2AB6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CC06357-9624-4EBA-A38F-764A2DA2AB6D}.Release|x64.ActiveCfg = Release|x64
 		{0CC06357-9624-4EBA-A38F-764A2DA2AB6D}.Release|x64.Build.0 = Release|x64
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Debug|x64.Build.0 = Debug|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Release|x64.ActiveCfg = Release|Any CPU
+		{682030CC-8B2E-4931-B0E3-8EDEC8246700}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

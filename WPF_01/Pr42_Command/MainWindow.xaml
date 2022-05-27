@@ -1,0 +1,47 @@
+﻿<Window x:Class="Pr42_Command.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr42_Command"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--1.在后端通过代码来进行CommandBinding-->
+        <Button x:Name="btn01" Content="Button_01" Margin="20"/>
+        <TextBox x:Name="tb01" Grid.Row="0" Grid.Column="1" Margin="10" Text="Hello just a test for command" TextWrapping="Wrap"/>
+
+        <!--2.在XAML中来绑定,通过Command来实现-->
+        <Button Content="AddTeacher" Grid.Row="1" Command="New" CommandParameter="Teacher" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button Content="AddStudent" Grid.Row="1" Command="New" CommandParameter="Student" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" TextAlignment="Center" Text="Input Name:"/>
+        <TextBox x:Name="nameTxt" Grid.Row="1" Grid.Column="1" Margin="10,20,10,0"/>
+        <ListBox x:Name="subItem" Grid.Row="1" Grid.Column="2" Margin="0,20,0,0"/>
+        
+        <!--3.通过之前的事件Event方式来进行处理，实现同样的功能-->
+        <Button x:Name="techBtn" Grid.Row="2" Content="TeacherBtn" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="stuBtn" Grid.Row="2" Content="StudentBtn" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" TextAlignment="Center" Text="Input Name:"/>
+        <TextBox x:Name="inputTxt" Grid.Row="2" Grid.Column="1" Margin="10,20,10,0"/>
+        <ListBox x:Name="showItem" Grid.Row="2" Grid.Column="2" Margin="0,20,0,0"/>
+
+    </Grid>
+
+    <!--2.为窗体添加CommandBinding-->
+    <Window.CommandBindings>
+        <CommandBinding Command="New" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+</Window>

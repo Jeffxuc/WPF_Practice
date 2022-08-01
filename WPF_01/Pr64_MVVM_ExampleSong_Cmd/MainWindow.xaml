@@ -1,0 +1,40 @@
+﻿<Window x:Class="Pr64_MVVM_ExampleSong_Cmd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr64_MVVM_ExampleSong_Cmd"
+        xmlns:cmdModel="clr-namespace:Pr64_MVVM_ExampleSong_Cmd.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <cmdModel:SongViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="TestItem01">
+                <MenuItem Header="Update ArtistName" Command="{Binding UpdateArtistName}"/>
+                <MenuItem Header="0000"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBlock Grid.Row="1" Margin="10,10" Text="MVVM : Use Command" Foreground="BlueViolet" FontSize="16"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Label Content="ArtistName: "/>
+            <Label Content="{Binding ArtistName}" Margin="20,0,0,0"/>
+        </StackPanel>
+        <Button Grid.Row="3" x:Name="btn01" Content="Update Artist Name" HorizontalAlignment="Left" Margin="60,10,0,0"
+                Command="{Binding UpdateArtistName}"/>
+
+
+
+    </Grid>
+</Window>

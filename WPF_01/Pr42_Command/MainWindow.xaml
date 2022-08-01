@@ -20,7 +20,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--1.在后端通过代码来进行CommandBinding-->
+        <!--1.在后端通过代码来进行CommandBinding 自定义的Command-->
         <Button x:Name="btn01" Content="Button_01" Margin="20"/>
         <TextBox x:Name="tb01" Grid.Row="0" Grid.Column="1" Margin="10" Text="Hello just a test for command" TextWrapping="Wrap"/>
 
@@ -40,7 +40,7 @@
 
     </Grid>
 
-    <!--2.为窗体添加CommandBinding-->
+    <!--2.为窗体添加CommandBinding，此命令为WPF系统预留的Command-->
     <Window.CommandBindings>
         <CommandBinding Command="New" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
     </Window.CommandBindings>

@@ -30,6 +30,7 @@ namespace Pr42_Command
         }
 
         #region 1. 后台通过C#代码来进行绑定对应的命令
+        //声明并自定义路由命令：clearCmd
         private RoutedCommand clearCmd = new RoutedCommand("Clear TextBox", typeof(Window));
 
         private void InitializeCommand()
@@ -44,6 +45,7 @@ namespace Pr42_Command
             cmdBind.Executed += CmdBind_Executed;
 
             grid.CommandBindings.Add(cmdBind);
+
         }
 
         private void CmdBind_Executed(object sender, ExecutedRoutedEventArgs e)

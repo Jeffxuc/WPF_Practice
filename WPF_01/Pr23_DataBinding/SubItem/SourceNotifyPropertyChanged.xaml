@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
 
         <!--<Grid.DataContext>
-            <local:NormalData Num="96"/>
+            <local:NormalData x:Name="myData"/>
         </Grid.DataContext>-->
 
         <TextBlock x:Name="txt00" Margin="10" Background="Azure" FontSize="30"/>
@@ -31,6 +31,18 @@
         <TextBlock x:Name="lt" Grid.Row="2" Grid.Column="0" Margin="20" Text="{Binding Num}" FontSize="30"/>
         <TextBox x:Name="tb21" Grid.Row="2" Grid.Column="1" Margin="20" Text="{Binding City,Mode=TwoWay}"/>
         <TextBlock x:Name="tb22" Grid.Row="2" Grid.Column="2" Margin="20" Text="{Binding City}"/>
+
+        <TextBlock x:Name="tb30" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="{}{0} ++++ {1} -- {2}">
+                    <Binding Path="Msg_errorinfo"/>
+                    <Binding Path="Msg_errorCode"/>
+                    <Binding Path="Num"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+
+        <TextBlock x:Name="tb31" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Background="AliceBlue"/>
 
     </Grid>
 </Window>

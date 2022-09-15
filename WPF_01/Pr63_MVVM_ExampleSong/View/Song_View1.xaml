@@ -7,9 +7,9 @@
       xmlns:localVM="clr-namespace:Pr63_MVVM_ExampleSong.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800">
-    <!--<Page.DataContext>
+    <!--<UserControl.DataContext>
         <localVM:Song_ViewModel/>
-    </Page.DataContext>-->
+    </UserControl.DataContext>-->
 
     <Grid>
         <Grid.RowDefinitions>

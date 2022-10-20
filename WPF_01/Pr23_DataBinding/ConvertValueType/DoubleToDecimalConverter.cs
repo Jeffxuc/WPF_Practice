@@ -32,4 +32,38 @@ namespace Pr23_DataBinding.ConvertValueType
             return Decimal.ToDouble((decimal)value);
         }
     }
+
+
+    /// <summary>
+    /// When "BorderThickness=0",  return Collapsed, otherwise return Visible.
+    /// </summary>
+    [ValueConversion(typeof(Thickness), typeof(Visibility))]
+    public class Thickness2Visible : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            Thickness thickness = new Thickness(0);
+            Thickness res = (Thickness)value;
+
+            if (res==thickness)
+            {
+                return Visibility.Collapsed;
+            }
+            else
+                return Visibility.Visible;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            Visibility vis = (Visibility)value;
+            if (vis == Visibility.Visible)
+            {
+                return new Thickness(1);
+            }
+            else
+                return new Thickness(0);
+
+            
+        }
+    }
 }

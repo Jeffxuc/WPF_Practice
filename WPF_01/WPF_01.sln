@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr70_MVVM_MSExample", "Pr70
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr64_MVVM_ExampleSong_Cmd", "Pr64_MVVM_ExampleSong_Cmd\Pr64_MVVM_ExampleSong_Cmd.csproj", "{FAF19514-4965-440B-9467-753B536D274E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr44_Narrator", "Pr44_Narrator\Pr44_Narrator.csproj", "{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,14 @@ Global
 		{FAF19514-4965-440B-9467-753B536D274E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAF19514-4965-440B-9467-753B536D274E}.Release|x64.ActiveCfg = Release|Any CPU
 		{FAF19514-4965-440B-9467-753B536D274E}.Release|x64.Build.0 = Release|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Debug|x64.Build.0 = Debug|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Release|x64.ActiveCfg = Release|Any CPU
+		{374984A1-4CBE-4BF5-A9A2-C838FF8A61A3}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,6 +22,34 @@ namespace Pr23_DataBinding.ConvertValueType
         public DecimalScrollBarWindow()
         {
             InitializeComponent();
+
+            btn01.Click += (s1, e1) =>
+            {
+                if (btn01.BorderThickness == new Thickness(0))
+                {
+                    btn01.BorderThickness = new Thickness(1);
+                }
+                else
+                {
+                    btn01.BorderThickness = new Thickness(0);
+                }
+            };
+
+            btn02.Click += (s2, e2) =>
+            {
+                if (btn02.BorderThickness == new Thickness(0))
+                {
+                    btn02.BorderThickness = new Thickness(1);
+                    lb_01.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    btn02.BorderThickness = new Thickness(0);
+                    lb_01.Visibility = Visibility.Collapsed;
+                }
+            };
+
+
         }
     }
 }

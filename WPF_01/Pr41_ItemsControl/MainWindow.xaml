@@ -41,7 +41,7 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
-                <!--设置容器中每个条目的模板-->
+                <!--设置容器中每个数据对象的模板，数据对象位于条目容器中-->
                 <DataTemplate>
                     <DataTemplate.Resources>
                         <Style TargetType="TextBlock">
@@ -59,7 +59,7 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
             <ItemsControl.ItemContainerStyle>
-                <!--设置容器中每个子控件的样式，如尺寸及Triggers等-->
+                <!--设置每个条目容器的样式，作为一个容器而存在，如尺寸及Triggers等-->
                 <Style>
                     <Setter Property="Control.Width" Value="100"/>
                     <Setter Property="Control.Margin" Value="5"/>

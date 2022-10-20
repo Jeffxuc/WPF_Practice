@@ -9,15 +9,41 @@
 
     <Window.Resources>
         <local:DoubleToDecimalConverter x:Key="decimalConvert"/>
+        <local:Thickness2Visible x:Key="visibleConvert"/>
     </Window.Resources>
 
-    <StackPanel>
-        <!--The binding source-->
-        <ScrollBar Name="scroll" Orientation="Horizontal" Maximum="100" Minimum="1" Margin="24" SmallChange="2" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <!--The binding source-->
+            <ScrollBar Name="scroll" Orientation="Horizontal" Maximum="100" Minimum="1" Margin="30,30,30,10" SmallChange="2" />
 
-        <!--The binding target-->
-        <Label HorizontalAlignment="Center" Name="lb01" Margin="24" FontSize="20"
+            <!--The binding target-->
+            <Label HorizontalAlignment="Center" Name="lb01" Margin="5" FontSize="20"
        Content="{Binding ElementName=scroll,Path=Value,Mode=OneWay,Converter={StaticResource decimalConvert},ConverterParameter=1}" />
-    </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Button x:Name="btn01" Content="A01" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Red" Margin="5"/>
+            <Button x:Name="btn02" Content="A02" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Red" Margin="5"/>
+            
+            <Label x:Name="lb_01" Content="show A01" Visibility="{Binding ElementName=btn01,Path=BorderThickness, Mode=TwoWay,Converter={StaticResource visibleConvert}}"/>
+            <Label Content="Show A02" Visibility="{Binding ElementName=btn02,Path=BorderThickness,Converter={StaticResource visibleConvert}}"/>
+        </StackPanel>
+        
+        
+        
+    </Grid>
+
+    
     
 </Window>

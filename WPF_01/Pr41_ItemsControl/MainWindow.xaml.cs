@@ -25,6 +25,7 @@ namespace Pr41_ItemsControl
         {
             InitializeComponent();
         }
+
     }
 
     // 自定义数据类型

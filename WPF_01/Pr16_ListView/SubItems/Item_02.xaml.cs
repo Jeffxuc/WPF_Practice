@@ -13,22 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Pr61_MVVMPractice
+namespace Pr16_ListView.SubItems
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Item_02.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Item_02 : UserControl
     {
-        public MainWindow()
+        public Item_02()
         {
             InitializeComponent();
-
-            View.MainPage mainPage = new View.MainPage();
-            View.ShowDataView_1 showDataView_1 = new View.ShowDataView_1();
-
-            Content = showDataView_1;
-
         }
     }
 }

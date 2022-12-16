@@ -4,4 +4,8 @@
     <StartAction>Program</StartAction>
     <StartProgram>D:\WSpace\WPF\MEF_01\MEF_Pr01\MyProject\bin\Debug\MyProject.exe</StartProgram>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartProgram>D:\WSpace\WPF\MEF_01\MEF_Pr01\MyProject\bin\Debug\MyProject.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
 </Project>

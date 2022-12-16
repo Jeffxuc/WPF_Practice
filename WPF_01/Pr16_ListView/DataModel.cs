@@ -32,4 +32,29 @@ namespace Pr16_ListView
             cityNum = num;
         }
     }
+
+    public class WifiDetailCard
+    {
+        public string img { get; set; }
+        public string descText { get; set; }
+        public int progressNum { get; set; }
+
+        public WifiDetailCard(string _img, string _descText, int _progressNum)
+        {
+            img = _img;
+            descText = _descText;
+            progressNum = _progressNum;
+        }
+
+    }
+
+    public class WifiTestData : ObservableCollection<WifiDetailCard>
+    {
+        public WifiTestData()
+        {
+            Add(new WifiDetailCard("Image1", "網路裝置及設定", 0));
+            Add(new WifiDetailCard("Image2", "網路連線", 0));
+        }
+    }
+
 }

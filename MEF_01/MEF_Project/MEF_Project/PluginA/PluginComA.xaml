@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="PluginA.UserControl1"
+﻿<UserControl x:Class="PluginA.PluginComA"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,5 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
         <Label x:Name="labelA" Content="Pugin A Page" FontSize="40" HorizontalAlignment="Center"/>
+        <Button x:Name="comABtn" Content="PluginA Btn01" Margin="60" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="getTxt" TextWrapping="Wrap" Text="For receive message" Margin="10"/>
     </StackPanel>
 </UserControl>

@@ -147,7 +147,7 @@
     </Style>
 
 
-    <!--【2】. 设置ListView的样式，及 ItemTemplate 所对应的 DataTemplate 样式-->
+    <!--【2】. 设置ListView的样式，及 ItemTemplate 所对应的 DataTemplate 样式，没有设置ListViewItem的样式-->
     <Style x:Key="listViewStyle02" TargetType="ListView">
         <!--1. Set the template that defines the panel that controls the layout of items-->
         <Setter Property="ItemsPanel">
@@ -185,10 +185,142 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <!--【3】. 设置ListView的样式: 1. ItemsPanel，2. ListView Template, 3. ListViewItem，4. ItemTemplate-->
+    <Style x:Key="listViewStyle13" TargetType="ListView">
+        <!--1. Set the template that defines the panel that controls the layout of items-->
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <!--2. Set the Template for the whole ListView other than the ListViewItem.
+               Attention: the Template must include "ItemsPresenter", otherwise the 
+               items in the ListView will can't be display.-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListView">
+                    <Border CornerRadius="5" Background="Transparent" BorderThickness="1" BorderBrush="Turquoise">
+                        <ItemsPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!--3. The ListViewItem style-->
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Width" Value="564"/>
+                    <Setter Property="Height" Value="120"/>
+                    <Setter Property="Background" Value="Pink"/>
+                    <Setter Property="Margin" Value="8"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border BorderThickness="0">
+                                    <!--<Border.Effect>
+                                        <DropShadowEffect Color="Black" Opacity="0.2"/>
+                                    </Border.Effect>-->
+
+                                    <ContentPresenter/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <!--4. The Content of ListViewItem.
+               Set the item template of ListView, each item template value is a DataTemplate used to 
+               describes the visual structure of a data object contained in the ListViewItem.-->
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Width="48" Height="48" Margin="36" Text="{Binding Path=img}" Background="DarkGoldenrod"/>
+                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Stretch">
+                                <Grid Margin="0,0,40,6">
+                                    <TextBlock HorizontalAlignment="Left" Text="{Binding Path=descText}"/>
+                                    <TextBlock HorizontalAlignment="Right" Text="80 %"/>
+                                </Grid>
+                                <ProgressBar Margin="0,0,40,0" Height="5" Value="80"/>
+                            </StackPanel>
+                        </Grid>
+                        <!--<Border.Effect>
+                            <DropShadowEffect Color="Black" Opacity="0.2"/>
+                        </Border.Effect>-->
+                    </Border>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     
     
+    <!--【4】 ***Recommend way*** for style set as two section: 1). The ListView-->
+    <Style x:Key="detailTestItemStyle" TargetType="ListView">
+        <Setter Property="Background" Value="Pink"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Width="48" Height="48" Margin="36" Text="{Binding Path=img}" Background="DarkGoldenrod"/>
+                        <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0,0,40,0" VerticalAlignment="Center">
+                            <Grid Margin="0,0,0,6">
+                                <TextBlock HorizontalAlignment="Left" Text="{Binding Path=descText}"/>
+                                <TextBlock HorizontalAlignment="Right" Text="80 %"/>
+                            </Grid>
+                            <ProgressBar Height="5" Value="80" VerticalAlignment="Top"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="listViewItemStyle" TargetType="ListViewItem">
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="Opacity" Value="0.9"/>
+        <Setter Property="Width" Value="564"/>
+        <Setter Property="Height" Value="120"/>
+        <Setter Property="Margin" Value="0,5,8,0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8">
+                        <ContentPresenter/>
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" Opacity="0.2" Direction="310"/>
+                        </Border.Effect>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
     <!--************************************************************************-->
-    <!--【3】ListView Style -->
+    <!--【6】ListView Style -->
     <Style x:Key="listViewStyle03" TargetType="ListView">
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Background" Value="Transparent"/>
@@ -212,7 +344,5 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-
 
 </ResourceDictionary>   

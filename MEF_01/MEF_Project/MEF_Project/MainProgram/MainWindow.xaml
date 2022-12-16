@@ -11,6 +11,7 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
         <!--左侧为ListView栏-->
         <ListView x:Name="ItemsList" Grid.Column="0" Background="Bisque"/>
@@ -18,5 +19,8 @@
         <GridSplitter Grid.Column="1" Width="6" VerticalAlignment="Stretch" HorizontalAlignment="Center" ShowsPreview="False"/>
         <!--右侧显示加载的各个Plugin的内容-->
         <Frame x:Name="frameContent" Grid.Column="2"/>
+
+        <Button x:Name="triggerEvent" Grid.Column="3" VerticalAlignment="Top" Margin="0,50,0,0" Content="TriggerEvent" Click="triggerEvent_Click"/>
+        <TextBlock x:Name="showTxt" Grid.Column="3" Text="Initial text" VerticalAlignment="Center" TextWrapping="WrapWithOverflow"/>
     </Grid>
 </Window>

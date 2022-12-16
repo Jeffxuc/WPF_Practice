@@ -12,31 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.ComponentModel.Composition;
-using MyInterface;
 
-namespace PluginB
+namespace Pr61_MVVMPractice.View
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for ShowDataView_1.xaml
     /// </summary>
-    /// 
-    [Export(typeof(IMyInterface))]
-    public partial class UserControl1 : UserControl,IMyInterface
+    public partial class ShowDataView_1 : UserControl
     {
-        public UserControl1()
+        public ShowDataView_1()
         {
             InitializeComponent();
-        }
-
-        public int GetPluginId()
-        {
-            return 1;
-        }
-
-        public string GetPluginName()
-        {
-            return "This is Plugin B";
         }
     }
 }

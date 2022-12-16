@@ -18,7 +18,8 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <myData:DataModel x:Key="dataList"/>
-            
+            <myData:WifiTestData x:Key="wifiData"/>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="../CustomStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
@@ -171,6 +172,8 @@
         <ListView x:Name="item40" Grid.Row="4" Grid.Column="0" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   ItemsSource="{Binding Source={StaticResource dataList}}" Style="{StaticResource listViewStyle02}">
         </ListView>
+
+        
 
 
         <!--*********** Narrator test ***********-->

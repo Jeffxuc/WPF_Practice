@@ -52,12 +52,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UserControl1.xaml">
+    <Page Include="PluginComB.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="PluginComB.xaml.cs">
+      <DependentUpon>PluginComB.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

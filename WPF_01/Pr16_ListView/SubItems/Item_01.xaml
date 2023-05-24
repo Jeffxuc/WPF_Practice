@@ -19,6 +19,7 @@
         <ResourceDictionary>
             <myData:DataModel x:Key="dataList"/>
             <myData:WifiTestData x:Key="wifiData"/>
+            <myData:CheckBoxData x:Key="checkBoxData"/>
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="../CustomStyle.xaml"/>
@@ -100,7 +101,8 @@
         <ListView x:Name="item11" Grid.Row="1" Grid.Column="1" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   Style="{StaticResource listViewStyle01}"
                   ItemsSource="{Binding Source={StaticResource dataList}}" 
-                  ItemTemplate="{StaticResource myItemTemplate}">
+                  ItemTemplate="{StaticResource myItemTemplate}"
+                  PreviewKeyDown="item11_PreviewKeyDown">
         </ListView>
 
         <!--被选中的条目无法改变 Background-->
@@ -173,7 +175,56 @@
                   ItemsSource="{Binding Source={StaticResource dataList}}" Style="{StaticResource listViewStyle02}">
         </ListView>
 
-        
+        <ListView x:Name="item41" Grid.Row="4" Grid.Column="1" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  ItemsSource="{Binding Source={StaticResource checkBoxData}}" IsSynchronizedWithCurrentItem="True" TabIndex="1"
+                  AutomationProperties.Name="My List View">
+            <ListView.Resources>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                <Border Name="RootGrid" 
+                                                    Background="{TemplateBinding Background}"
+                                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                                    BorderThickness="{TemplateBinding BorderThickness}"                                                  
+                                                    SnapsToDevicePixels="true">
+                                    <ContentPresenter 
+                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="{x:Null}"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="Margin" Value="0,4,0,0"/>
+                    <Setter Property="Tag" Value="{Binding index}"/>
+                    <Setter Property="AutomationProperties.Name" Value="{Binding name}" />
+                    <EventSetter Event="PreviewKeyDown" Handler="item41_PreviewKeyDown"/>
+                </Style>
+            </ListView.Resources>
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <CheckBox x:Name="myCheckBox" Content="{Binding name}" IsChecked="{Binding ischecked, Mode=TwoWay}" 
+                                  Tag="{Binding index}" Width="50" Margin="0,0,6,0">
+                        </CheckBox>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+
 
 
         <!--*********** Narrator test ***********-->

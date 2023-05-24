@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Automation;
@@ -145,6 +146,82 @@ namespace Pr16_ListView.SubItems
         {
             int num2 = item22.SelectedIndex;
             e.Handled = false;
+        }
+
+        private void item11_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key==Key.Enter || e.Key==Key.Space)
+            {
+                e.Handled = true;
+
+                ListViewItem obj = item11.ItemContainerGenerator.ContainerFromItem(sender) as ListViewItem;
+
+
+            }
+        }
+
+
+
+        private childItem FindVisualChild<childItem>(DependencyObject obj)
+                where childItem : DependencyObject
+        {
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(obj); i++)
+            {
+                DependencyObject child = VisualTreeHelper.GetChild(obj, i);
+                if (child != null && child is childItem)
+                {
+                    return (childItem)child;
+                }
+                else
+                {
+                    childItem childOfChild = FindVisualChild<childItem>(child);
+                    if (childOfChild != null)
+                        return childOfChild;
+                }
+            }
+            return null;
+        }
+
+        private void item41_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter || e.Key == Key.Space)
+            {
+                e.Handled = true;
+
+                //ListViewItem listViewItem = item41.ItemContainerGenerator.ContainerFromItem(item41.Items.CurrentItem) as ListViewItem;
+                ListViewItem listViewItem = sender as ListViewItem;
+                ContentPresenter myContentPresenter = FindVisualChild<ContentPresenter>(listViewItem);
+                DataTemplate myDataTemplate = myContentPresenter.ContentTemplate;
+                CheckBox cb = myDataTemplate.FindName("myCheckBox", myContentPresenter) as CheckBox;
+
+                if (cb.IsChecked == true)
+                {
+                    cb.IsChecked = false;
+                }
+                else
+                {
+                    cb.IsChecked = true;
+                }
+
+                #region 通过代码模拟按键来触发事件：https://stackoverflow.com/questions/1645815/how-can-i-programmatically-generate-keypress-events-in-c
+                //   var key = Key.Tab;                    // Key to send
+                //   cb.Focus();
+                //   var target = cb;                        // Target element
+                //   var routedEvent = Keyboard.PreviewKeyDownEvent; // Event to send
+                //   target.RaiseEvent(
+                //new KeyEventArgs(
+                //  Keyboard.PrimaryDevice,
+                //  PresentationSource.FromVisual(target),
+                //  0,
+                //  key)
+                //{ RoutedEvent = routedEvent }
+                //       );
+                #endregion
+
+                cb.Focus();
+
+
+            }
         }
     }
 }

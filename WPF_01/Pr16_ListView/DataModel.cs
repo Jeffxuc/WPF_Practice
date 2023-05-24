@@ -57,4 +57,30 @@ namespace Pr16_ListView
         }
     }
 
+
+    public class CheckBoxInfo
+    {
+        public string name { get; set; }
+        public string index { get; set; }
+        public bool ischecked { get; set; }
+
+        public CheckBoxInfo(string _name, string _index, bool _isChecked)
+        {
+            name = _name;
+            index = _index;
+            ischecked = _isChecked;
+        }
+    }
+
+    public class CheckBoxData : ObservableCollection<CheckBoxInfo>
+    {
+        public CheckBoxData()
+        {
+            Add(new CheckBoxInfo("A01", "0", false));
+            Add(new CheckBoxInfo("A02", "1", false));
+            Add(new CheckBoxInfo("A03", "2", true));
+            Add(new CheckBoxInfo("A04", "3", false));
+        }
+    }
+
 }
